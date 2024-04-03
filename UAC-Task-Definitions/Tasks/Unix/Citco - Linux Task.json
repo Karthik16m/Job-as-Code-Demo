@@ -15,7 +15,7 @@
     "avgRunTimeDisplay": "1 Seconds",
     "broadcastCluster": null,
     "broadcastClusterVar": null,
-    "command": "ls -ltr",
+    "command": "hostname",
     "commandOrScript": "Command",
     "cpDuration": null,
     "cpDurationUnit": "Minutes",
