@@ -1,0 +1,9 @@
+{
+    "description": null,
+    "exportReleaseLevel": "7.5.0.0",
+    "exportTable": "ops_generic_group",
+    "name": "Citco-JaC",
+    "retainSysIds": true,
+    "sysId": "ae02ed30cbb243f0b151e54c8416bc33",
+    "version": 1
+}
