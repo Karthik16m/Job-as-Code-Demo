@@ -1,9 +1,0 @@
-{
-    "description": "Business Service to Hold Scripts",
-    "exportReleaseLevel": "7.4.0.0",
-    "exportTable": "ops_generic_group",
-    "name": "BS-Script",
-    "retainSysIds": true,
-    "sysId": "1c136a100e284dcba7bb40c683c7e494",
-    "version": 1
-}
