@@ -1,0 +1,234 @@
+{
+    "type": "taskManual",
+    "actions": {
+        "abortActions": [],
+        "emailNotifications": [],
+        "setVariableActions": [],
+        "snmpNotifications": [],
+        "systemOperations": [
+            {
+                "agent": null,
+                "agentCluster": null,
+                "agentClusterVar": null,
+                "agentVar": null,
+                "description": "Teams",
+                "execCommand": "Cancel",
+                "execCriteria": "Oldest Active Instance",
+                "execId": null,
+                "execLookupOption": "Instance Name",
+                "execName": null,
+                "execWorkflowName": null,
+                "execWorkflowNameCond": "Equals",
+                "exitCodes": null,
+                "limit": null,
+                "notificationOption": "Operation Failure",
+                "notifyOnEarlyFinish": false,
+                "notifyOnLateFinish": false,
+                "notifyOnLateStart": false,
+                "notifyOnProjectedLate": false,
+                "operation": "Launch Task",
+                "overrideTriggerDateOffset": null,
+                "overrideTriggerDateTime": false,
+                "overrideTriggerTime": "00:00",
+                "status": "Action Required",
+                "sysId": "329ea1328ccd4cb3929b150f3fab447b",
+                "task": "Approval Notification to Teams",
+                "taskLimitType": "Unlimited",
+                "taskVar": null,
+                "trigger": null,
+                "triggerVar": null,
+                "variables": [
+                    {
+                        "name": "task_status",
+                        "value": "${ops_status}"
+                    },
+                    {
+                        "name": "job_name",
+                        "value": "${ops_task_name}"
+                    },
+                    {
+                        "name": "job_type",
+                        "value": "${ops_task_type}"
+                    },
+                    {
+                        "name": "invoked_by",
+                        "value": "${ops_workflow_name}"
+                    },
+                    {
+                        "name": "exec_user",
+                        "value": "${ops_execution_user}"
+                    },
+                    {
+                        "name": "desc",
+                        "value": "${ops_description}"
+                    },
+                    {
+                        "name": "msg",
+                        "value": "Approve to proceed with the subsequent tasks in workflow :${ops_workflow_name}"
+                    }
+                ],
+                "variablesUnresolved": false,
+                "vertexSelection": false,
+                "vertices": [],
+                "virtualResource": null,
+                "virtualResourceVar": null
+            },
+            {
+                "agent": null,
+                "agentCluster": null,
+                "agentClusterVar": null,
+                "agentVar": null,
+                "description": null,
+                "execCommand": "Cancel",
+                "execCriteria": "Oldest Active Instance",
+                "execId": null,
+                "execLookupOption": "Instance Name",
+                "execName": null,
+                "execWorkflowName": null,
+                "execWorkflowNameCond": "Equals",
+                "exitCodes": null,
+                "limit": null,
+                "notificationOption": "Operation Failure",
+                "notifyOnEarlyFinish": false,
+                "notifyOnLateFinish": false,
+                "notifyOnLateStart": false,
+                "notifyOnProjectedLate": false,
+                "operation": "Launch Task",
+                "overrideTriggerDateOffset": null,
+                "overrideTriggerDateTime": false,
+                "overrideTriggerTime": "00:00",
+                "status": "Action Required",
+                "sysId": "9a8e022d2ef4492c82ed4d2acaa3b230",
+                "task": "APPROVAL-NOTIF-SLACK",
+                "taskLimitType": "Unlimited",
+                "taskVar": null,
+                "trigger": null,
+                "triggerVar": null,
+                "variables": [
+                    {
+                        "name": "task_status",
+                        "value": "${ops_status}"
+                    },
+                    {
+                        "name": "job_name",
+                        "value": "${ops_task_name}:${ops_task_id}"
+                    },
+                    {
+                        "name": "job_type",
+                        "value": "${ops_task_type}"
+                    },
+                    {
+                        "name": "invoked_by",
+                        "value": "${ops_workflow_name}"
+                    },
+                    {
+                        "name": "exec_user",
+                        "value": "${ops_execution_user}"
+                    },
+                    {
+                        "name": "desc",
+                        "value": "${ops_description}"
+                    },
+                    {
+                        "name": "msg",
+                        "value": "Approve to proceed with the subsequent tasks in workflow :${ops_workflow_name}"
+                    }
+                ],
+                "variablesUnresolved": false,
+                "vertexSelection": false,
+                "vertices": [],
+                "virtualResource": null,
+                "virtualResourceVar": null
+            }
+        ]
+    },
+    "avgRunTime": 124,
+    "avgRunTimeDisplay": "2 Minutes 4 Seconds",
+    "cpDuration": null,
+    "cpDurationUnit": "Minutes",
+    "customField1": {
+        "label": "Custom Field 1",
+        "value": null
+    },
+    "customField2": {
+        "label": "Output Link",
+        "value": null
+    },
+    "efDayConstraint": "None",
+    "efDuration": "00:00:00:00",
+    "efEnabled": false,
+    "efNthAmount": 5,
+    "efOffsetDuration": null,
+    "efOffsetDurationUnit": "Minutes",
+    "efOffsetPercentage": 0,
+    "efOffsetType": "Percentage",
+    "efTime": "00:00",
+    "efType": "Time",
+    "enforceVariables": false,
+    "exclusiveTasks": [],
+    "exclusiveWithSelf": false,
+    "executionRestriction": "None",
+    "exportReleaseLevel": "7.6.0.0",
+    "exportTable": "ops_task_manual",
+    "firstRun": "2023-05-21 23:13:26 +0200",
+    "holdResources": false,
+    "lastRun": "2024-07-21 22:18:34 +0200",
+    "lastRunTime": 55,
+    "lastRunTimeDisplay": "55 Seconds",
+    "lfDayConstraint": "None",
+    "lfDuration": "00:00:00:00",
+    "lfEnabled": false,
+    "lfNthAmount": 5,
+    "lfOffsetDuration": null,
+    "lfOffsetDurationUnit": "Minutes",
+    "lfOffsetPercentage": 0,
+    "lfOffsetType": "Percentage",
+    "lfTime": "00:00",
+    "lfType": "Time",
+    "lockVariables": false,
+    "logLevel": "Inherited",
+    "lsDayConstraint": "None",
+    "lsDuration": "00:00:00:00",
+    "lsEnabled": false,
+    "lsNthAmount": 5,
+    "lsTime": "00:00",
+    "lsType": "Time",
+    "maxRunTime": 624,
+    "maxRunTimeDisplay": "10 Minutes 24 Seconds",
+    "minRunTime": 8,
+    "minRunTimeDisplay": "8 Seconds",
+    "name": "APPROVAL-SALES-ORDER-PROCESS",
+    "notes": [],
+    "opswiseGroups": [],
+    "overrideInstanceWait": "No",
+    "resPriority": 10,
+    "resolveNameImmediately": false,
+    "restrictionPeriod": "None",
+    "restrictionPeriodAfterDate": null,
+    "restrictionPeriodAfterTime": null,
+    "restrictionPeriodBeforeDate": null,
+    "restrictionPeriodBeforeTime": null,
+    "restrictionPeriodDateList": [],
+    "retainSysIds": true,
+    "runCount": 33,
+    "runTime": 4085,
+    "simulation": false,
+    "startHeld": false,
+    "startHeldReason": null,
+    "summary": "Approve to Proceed with Subsequent process",
+    "sysId": "45152ba5f9be476b91b7c4d312e6da9d",
+    "timeZonePref": "-- System Default --",
+    "twDelayAmount": null,
+    "twDelayDuration": "00:00:00:00",
+    "twDelayType": "None",
+    "twWaitAmount": null,
+    "twWaitDayConstraint": "None",
+    "twWaitDuration": "00:00:00:00",
+    "twWaitTime": "00:00",
+    "twWaitType": "None",
+    "twWorkflowOnly": "-- System Default --",
+    "userEstimatedDuration": null,
+    "variables": [],
+    "version": 7,
+    "virtualResources": []
+}

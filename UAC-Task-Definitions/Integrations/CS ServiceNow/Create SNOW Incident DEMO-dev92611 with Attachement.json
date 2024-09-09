@@ -1,0 +1,307 @@
+{
+    "type": "taskUniversal",
+    "actions": {
+        "abortActions": [],
+        "emailNotifications": [],
+        "setVariableActions": [],
+        "snmpNotifications": [],
+        "systemOperations": [
+            {
+                "agent": null,
+                "agentCluster": null,
+                "agentClusterVar": null,
+                "agentVar": null,
+                "description": null,
+                "execCommand": "Cancel",
+                "execCriteria": "Oldest Active Instance",
+                "execId": null,
+                "execLookupOption": "Instance Name",
+                "execName": null,
+                "execWorkflowName": null,
+                "execWorkflowNameCond": "Equals",
+                "exitCodes": null,
+                "limit": null,
+                "notificationOption": "Operation Failure",
+                "notifyOnEarlyFinish": false,
+                "notifyOnLateFinish": false,
+                "notifyOnLateStart": false,
+                "notifyOnProjectedLate": false,
+                "operation": "Launch Task",
+                "overrideTriggerDateOffset": null,
+                "overrideTriggerDateTime": false,
+                "overrideTriggerTime": "00:00",
+                "status": "Success",
+                "sysId": "0ab340c9496a4305b77c9fd6e2794cdc",
+                "task": "Update-Incident-Number-${id}",
+                "taskLimitType": "Unlimited",
+                "taskVar": null,
+                "trigger": null,
+                "triggerVar": null,
+                "variables": [
+                    {
+                        "name": "incident_number",
+                        "value": "${_outputXPath('STDOUT', '//result/task_effective_number')}"
+                    },
+                    {
+                        "name": "id",
+                        "value": "${ops_snow_outputinstanceid}"
+                    }
+                ],
+                "variablesUnresolved": false,
+                "vertexSelection": false,
+                "vertices": [],
+                "virtualResource": null,
+                "virtualResourceVar": null
+            }
+        ]
+    },
+    "agent": "Hof(Windows & DB connect)",
+    "agentCluster": null,
+    "agentClusterVar": null,
+    "agentVar": null,
+    "autoCleanup": false,
+    "avgRunTime": 5,
+    "avgRunTimeDisplay": "5 Seconds",
+    "booleanField1": {
+        "label": "Attach output from Sibling Task",
+        "name": "attachsiblingoutput",
+        "value": false
+    },
+    "booleanField2": {
+        "label": "Attach output from any task instance",
+        "name": "attachanyoutput",
+        "value": true
+    },
+    "broadcastCluster": null,
+    "broadcastClusterVar": null,
+    "choiceField1": {
+        "label": "Function",
+        "name": "function",
+        "value": "Create Incident"
+    },
+    "choiceField10": {
+        "label": "Priority",
+        "name": "priority",
+        "value": "1 - Critical"
+    },
+    "choiceField2": {
+        "label": "Logging Level",
+        "name": "logginglevel",
+        "value": "Info"
+    },
+    "choiceField3": {
+        "label": "Category",
+        "name": "category",
+        "value": "Software"
+    },
+    "choiceField4": {
+        "label": "Subcategory",
+        "name": "subcategory",
+        "value": "Operating System"
+    },
+    "choiceField5": {
+        "label": "Impact",
+        "name": "impact",
+        "value": "2 - Medium"
+    },
+    "choiceField6": {
+        "label": "Urgency",
+        "name": "urgency",
+        "value": "1 - High"
+    },
+    "choiceField7": {
+        "label": "Request Format",
+        "name": "requestformat",
+        "value": "application/xml"
+    },
+    "choiceField8": {
+        "label": "Response format",
+        "name": "responseformat",
+        "value": "application/xml"
+    },
+    "choiceField9": {
+        "label": "Category",
+        "name": "categorychg",
+        "value": "Hardware"
+    },
+    "cpDuration": null,
+    "cpDurationUnit": "Minutes",
+    "createConsole": false,
+    "credentialField1": {
+        "label": "ServiceNow Credential",
+        "name": "credential",
+        "value": "ServiceNow-dev227936"
+    },
+    "credentialField2": {
+        "label": "UC Credential",
+        "name": "controllercredential",
+        "value": "UC-Frankfurt-CRED-RKM"
+    },
+    "credentials": null,
+    "credentialsVar": null,
+    "customField1": {
+        "label": "Custom Field 1",
+        "value": null
+    },
+    "customField2": {
+        "label": "Output Link",
+        "value": null
+    },
+    "desktopInteract": false,
+    "efDayConstraint": "None",
+    "efDuration": "00:00:00:00",
+    "efEnabled": false,
+    "efNthAmount": 5,
+    "efOffsetDuration": null,
+    "efOffsetDurationUnit": "Minutes",
+    "efOffsetPercentage": 0,
+    "efOffsetType": "Percentage",
+    "efTime": "00:00",
+    "efType": "Time",
+    "elevateUser": false,
+    "enforceVariables": false,
+    "environment": [],
+    "exclusiveTasks": [],
+    "exclusiveWithSelf": false,
+    "executionRestriction": "None",
+    "exitCodeOutput": null,
+    "exitCodeProcessing": "Success Exitcode Range",
+    "exitCodeText": null,
+    "exitCodes": "0",
+    "exportReleaseLevel": "7.6.0.0",
+    "exportTable": "ops_task_universal",
+    "firstRun": "2023-05-23 23:43:59 +0200",
+    "holdResources": false,
+    "lastRun": "2024-09-04 14:50:14 +0200",
+    "lastRunTime": 6,
+    "lastRunTimeDisplay": "6 Seconds",
+    "lfDayConstraint": "None",
+    "lfDuration": "00:00:00:00",
+    "lfEnabled": false,
+    "lfNthAmount": 5,
+    "lfOffsetDuration": null,
+    "lfOffsetDurationUnit": "Minutes",
+    "lfOffsetPercentage": 0,
+    "lfOffsetType": "Percentage",
+    "lfTime": "00:00",
+    "lfType": "Time",
+    "lockVariables": false,
+    "logLevel": "Inherited",
+    "lsDayConstraint": "None",
+    "lsDuration": "00:00:00:00",
+    "lsEnabled": false,
+    "lsNthAmount": 5,
+    "lsTime": "00:00",
+    "lsType": "Time",
+    "maxRunTime": 13,
+    "maxRunTimeDisplay": "13 Seconds",
+    "minRunTime": 2,
+    "minRunTimeDisplay": "2 Seconds",
+    "name": "Create SNOW Incident DEMO-dev92611 with Attachement",
+    "notes": [
+        {
+            "sysId": "b2f0c1762007445286ace9df49fcb12c",
+            "text": null,
+            "title": "DONOT Change the parameters in this Task"
+        }
+    ],
+    "opswiseGroups": [
+        "DEMO-SAP-WORKFLOW"
+    ],
+    "outputConditionOperator": "=",
+    "outputConditionStrategy": "Match Any",
+    "outputConditionValue": null,
+    "outputContentType": null,
+    "outputFailureOnly": false,
+    "outputPathExpression": null,
+    "outputReturnFile": null,
+    "outputReturnNline": "100",
+    "outputReturnSline": "1",
+    "outputReturnText": null,
+    "outputReturnType": "OUTERR",
+    "outputType": "STDOUT",
+    "overrideInstanceWait": "No",
+    "resPriority": 10,
+    "resolveNameImmediately": false,
+    "restrictionPeriod": "None",
+    "restrictionPeriodAfterDate": null,
+    "restrictionPeriodAfterTime": null,
+    "restrictionPeriodBeforeDate": null,
+    "restrictionPeriodBeforeTime": null,
+    "restrictionPeriodDateList": [],
+    "retainSysIds": true,
+    "retryExitCodes": null,
+    "retryIndefinitely": false,
+    "retryInterval": 60,
+    "retryMaximum": 0,
+    "retrySuppressFailure": false,
+    "runCount": 319,
+    "runTime": 1540,
+    "runtimeDir": null,
+    "simulation": false,
+    "startHeld": false,
+    "startHeldReason": null,
+    "summary": "***Caution - Change of variables may impact the incident details in service now",
+    "sysId": "0389e412c9ff4090a6f2e1ac311e23a9",
+    "template": "CS ServiceNow",
+    "textField1": {
+        "label": "Caller",
+        "name": "caller",
+        "value": "stonebranch"
+    },
+    "textField2": {
+        "label": "Assigned to",
+        "name": "assignedto",
+        "value": null
+    },
+    "textField3": {
+        "label": "Short description",
+        "name": "shortdescription",
+        "value": "Stonebranch Job Failed : ${sib_failed_task_name}"
+    },
+    "textField4": {
+        "label": "Description",
+        "name": "description",
+        "value": "${workflow_name}:${sib_failed_task_name}:${task_id} Job Failed - refer Output attached. "
+    },
+    "textField5": {
+        "label": "Instance URL",
+        "name": "instanceurl",
+        "value": "https://dev227936.service-now.com/"
+    },
+    "textField6": {
+        "label": "Sibling Task Name",
+        "name": "siblingname",
+        "value": null
+    },
+    "textField7": {
+        "label": "Task Instance ID",
+        "name": "outputinstanceid",
+        "value": "${task_id}"
+    },
+    "textField8": {
+        "label": "UC URL",
+        "name": "controllerurl",
+        "value": "https://eufrankfurt.stonebranchdev.cloud"
+    },
+    "textField9": {
+        "label": "Configuration item",
+        "name": "configurationitem",
+        "value": null
+    },
+    "timeZonePref": "-- System Default --",
+    "twDelayAmount": null,
+    "twDelayDuration": "00:00:00:00",
+    "twDelayType": "None",
+    "twWaitAmount": null,
+    "twWaitDayConstraint": "None",
+    "twWaitDuration": "00:00:00:00",
+    "twWaitTime": "00:00",
+    "twWaitType": "None",
+    "twWorkflowOnly": "-- System Default --",
+    "userEstimatedDuration": null,
+    "variables": [],
+    "version": 20,
+    "virtualResources": [],
+    "waitForOutput": true
+}

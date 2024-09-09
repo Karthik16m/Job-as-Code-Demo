@@ -1,0 +1,9 @@
+{
+    "description": "Demo Tasks Dataops",
+    "exportReleaseLevel": "7.6.0.0",
+    "exportTable": "ops_generic_group",
+    "name": "Dataops-Demo Tasks",
+    "retainSysIds": true,
+    "sysId": "955dadf2df0c4ed08f90b5dd3b4a5be9",
+    "version": 1
+}

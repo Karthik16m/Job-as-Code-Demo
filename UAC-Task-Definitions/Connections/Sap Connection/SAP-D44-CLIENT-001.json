@@ -1,0 +1,31 @@
+{
+    "description": "SAP jobs Hoffenheim ",
+    "exportReleaseLevel": "7.6.0.0",
+    "exportTable": "ops_sap_connection",
+    "name": "SAP-D44-CLIENT-001",
+    "opswiseGroups": [
+        "end_user_self_service"
+    ],
+    "retainSysIds": true,
+    "sapAshost": "172.31.9.188",
+    "sapClient": "001",
+    "sapConnectionType": "Specific Application Server",
+    "sapGroup": null,
+    "sapGwhost": null,
+    "sapGwserv": null,
+    "sapMshost": null,
+    "sapMysapsso2": null,
+    "sapR3name": null,
+    "sapSaprouter": null,
+    "sapSncLib": null,
+    "sapSncMode": null,
+    "sapSncMyname": null,
+    "sapSncPartnername": null,
+    "sapSncQop": null,
+    "sapSncSso": null,
+    "sapSysnr": "00",
+    "sapUseSymbolicNames": null,
+    "sapX509cert": null,
+    "sysId": "9f91ee3beaec4c359d6a9ca3e3c9377d",
+    "version": 13
+}

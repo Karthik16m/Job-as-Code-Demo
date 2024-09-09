@@ -1,0 +1,9 @@
+{
+    "description": null,
+    "exportReleaseLevel": "7.6.0.0",
+    "exportTable": "ops_generic_group",
+    "name": "RKM",
+    "retainSysIds": true,
+    "sysId": "ca310a70d677413da0f7efc88a06743b",
+    "version": 1
+}

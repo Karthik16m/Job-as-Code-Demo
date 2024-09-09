@@ -1,0 +1,146 @@
+{
+    "type": "taskWorkflow",
+    "actions": {
+        "abortActions": [],
+        "emailNotifications": [],
+        "setVariableActions": [],
+        "snmpNotifications": [],
+        "systemOperations": []
+    },
+    "avgRunTime": 12,
+    "avgRunTimeDisplay": "12 Seconds",
+    "calculateCp": false,
+    "calendar": null,
+    "cpDuration": null,
+    "cpDurationUnit": "Minutes",
+    "criticalEndpoints": [],
+    "customField1": {
+        "label": "Custom Field 1",
+        "value": null
+    },
+    "customField2": {
+        "label": "Output Link",
+        "value": null
+    },
+    "efDayConstraint": "None",
+    "efDuration": "00:00:00:00",
+    "efEnabled": false,
+    "efNthAmount": 5,
+    "efOffsetDuration": null,
+    "efOffsetDurationUnit": "Minutes",
+    "efOffsetPercentage": 0,
+    "efOffsetType": "Percentage",
+    "efTime": "00:00",
+    "efType": "Time",
+    "enforceVariables": false,
+    "exclusiveTasks": [],
+    "exclusiveWithSelf": false,
+    "executionRestriction": "None",
+    "exportReleaseLevel": "7.6.0.0",
+    "exportTable": "ops_task_workflow",
+    "firstRun": "2023-10-05 14:37:42 +0200",
+    "holdResources": false,
+    "instanceWait": "-- None --",
+    "lastRun": "2024-08-21 15:42:56 +0200",
+    "lastRunTime": 6,
+    "lastRunTimeDisplay": "6 Seconds",
+    "layoutOption": "-- None --",
+    "lfDayConstraint": "None",
+    "lfDuration": "00:00:00:00",
+    "lfEnabled": false,
+    "lfNthAmount": 5,
+    "lfOffsetDuration": null,
+    "lfOffsetDurationUnit": "Minutes",
+    "lfOffsetPercentage": 0,
+    "lfOffsetType": "Percentage",
+    "lfTime": "00:00",
+    "lfType": "Time",
+    "lockVariables": false,
+    "logLevel": "Inherited",
+    "lsDayConstraint": "None",
+    "lsDuration": "00:00:00:00",
+    "lsEnabled": false,
+    "lsNthAmount": 5,
+    "lsTime": "00:00",
+    "lsType": "Time",
+    "maxRunTime": 245,
+    "maxRunTimeDisplay": "4 Minutes 5 Seconds",
+    "minRunTime": 4,
+    "minRunTimeDisplay": "4 Seconds",
+    "name": "JIRA-INC_CREATION-FLOW",
+    "notes": [],
+    "numberOfTasks": 2,
+    "opswiseGroups": [],
+    "overrideCalendar": false,
+    "overrideInstanceWait": "No",
+    "resPriority": 10,
+    "resolveNameImmediately": false,
+    "restrictionPeriod": "None",
+    "restrictionPeriodAfterDate": null,
+    "restrictionPeriodAfterTime": null,
+    "restrictionPeriodBeforeDate": null,
+    "restrictionPeriodBeforeTime": null,
+    "restrictionPeriodDateList": [],
+    "retainSysIds": true,
+    "runCount": 37,
+    "runCriteria": [],
+    "runTime": 433,
+    "simulation": false,
+    "skippedOption": "Show Skipped",
+    "startHeld": false,
+    "startHeldReason": null,
+    "stepActions": [],
+    "stepConditions": [],
+    "summary": "JIRA-REQUEST-CREATION-DEMO",
+    "sysId": "17452ab7a9dc4d35aee60730b4e92ce9",
+    "timeZonePref": "-- System Default --",
+    "twDelayAmount": null,
+    "twDelayDuration": "00:00:00:00",
+    "twDelayType": "None",
+    "twWaitAmount": null,
+    "twWaitDayConstraint": "None",
+    "twWaitDuration": "00:00:00:00",
+    "twWaitTime": "00:00",
+    "twWaitType": "None",
+    "twWorkflowOnly": "-- System Default --",
+    "userEstimatedDuration": null,
+    "variables": [],
+    "version": 5,
+    "virtualResources": [],
+    "workflowEdges": [
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskName": "JSD Request Creation-Demo",
+                "value": "2"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskName": "Appends_Logs_to_Jira_Ticket",
+                "value": "3"
+            }
+        }
+    ],
+    "workflowVertices": [
+        {
+            "alias": null,
+            "task": {
+                "value": "JSD Request Creation-Demo"
+            },
+            "vertexId": "2",
+            "vertexX": "82.5",
+            "vertexY": "25"
+        },
+        {
+            "alias": null,
+            "task": {
+                "value": "Appends_Logs_to_Jira_Ticket"
+            },
+            "vertexId": "3",
+            "vertexX": "306",
+            "vertexY": "25"
+        }
+    ]
+}

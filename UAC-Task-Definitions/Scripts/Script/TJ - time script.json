@@ -1,0 +1,14 @@
+{
+    "content": "@echo Started: %date% %time%\n@echo .\n@echo .\n@echo .\n@echo Completed: %date% %time%\n\n\"${_scriptPath('version.bat')}\"",
+    "description": null,
+    "exportReleaseLevel": "7.6.0.0",
+    "exportTable": "ops_script",
+    "notes": [],
+    "opswiseGroups": [],
+    "resolveVariables": true,
+    "retainSysIds": true,
+    "scriptName": "TJ - time script",
+    "scriptType": "Script",
+    "sysId": "a80e39d68d7c4820b103bee0cb531550",
+    "version": 5
+}

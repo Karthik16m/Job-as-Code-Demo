@@ -1,0 +1,9 @@
+{
+    "description": "Group of managing self service users",
+    "exportReleaseLevel": "7.6.0.0",
+    "exportTable": "ops_generic_group",
+    "name": "end_user_self_service",
+    "retainSysIds": true,
+    "sysId": "ce6d83363dba4786ab266929edf8b1e7",
+    "version": 1
+}

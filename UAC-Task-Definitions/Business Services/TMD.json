@@ -1,0 +1,9 @@
+{
+    "description": "Telecom Malaysia Demo ",
+    "exportReleaseLevel": "7.6.0.0",
+    "exportTable": "ops_generic_group",
+    "name": "TMD",
+    "retainSysIds": true,
+    "sysId": "6d93ccebef974f25a52a383ba56434b0",
+    "version": 1
+}

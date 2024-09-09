@@ -1,0 +1,14 @@
+{
+    "content": "import requests\nfrom requests.auth import HTTPBasicAuth\nimport json\njira_id=\"\"\"${jira_id}\"\"\".strip()\nurl = \"https://sbemea.atlassian.net/rest/api/2/issue/\"+jira_id+\"/comment\"\n\nauth = HTTPBasicAuth(\"karthik16m92@gmail.com\", \"ATATT3xFfGF0AK7i9zPMb68IGiPF8ywQKdefSowaAyEQLLLnL4v5fFqZy5j1bZDc8BvpvSwuXSV6d5ThMpZlTHpDWLm3nUZ6toTYCUAMR8GaFbsD0vC8XLZLBmwd7hiFh9LDJFiddFey_w5Dh_jiKHe7oO_Df6HBm15hLRH2d5xQ9tlz3h_wr2w=0F817111\")\n\nheaders = {\n  \"Accept\": \"application/json\",\n  \"Content-Type\": \"application/json\"\n}\n\npayload = json.dumps( {\n    \"body\": \"${failed_output}\"\n})\n\nresponse = requests.request(\n   \"POST\",\n   url,\n   data=payload,\n   headers=headers,\n   auth=auth\n)\n\nprint(json.dumps(json.loads(response.text), sort_keys=True, indent=4, separators=(\",\", \": \")))",
+    "description": null,
+    "exportReleaseLevel": "7.6.0.0",
+    "exportTable": "ops_script",
+    "notes": [],
+    "opswiseGroups": [],
+    "resolveVariables": true,
+    "retainSysIds": true,
+    "scriptName": "scr_Jira-logs.uapy",
+    "scriptType": "Script",
+    "sysId": "ea201902b36e497dbad66c43aeb1294f",
+    "version": 10
+}
