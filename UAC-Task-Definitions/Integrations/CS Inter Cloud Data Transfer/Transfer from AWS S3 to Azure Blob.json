@@ -179,9 +179,9 @@
         "name": "taskname",
         "value": null
     },
-    "lastRun": "2024-09-06 18:03:33 +0200",
-    "lastRunTime": 18,
-    "lastRunTimeDisplay": "18 Seconds",
+    "lastRun": "2024-09-09 16:16:46 +0200",
+    "lastRunTime": 17,
+    "lastRunTimeDisplay": "17 Seconds",
     "lfDayConstraint": "None",
     "lfDuration": "00:00:00:00",
     "lfEnabled": false,
@@ -234,8 +234,8 @@
     "retryInterval": 60,
     "retryMaximum": 0,
     "retrySuppressFailure": false,
-    "runCount": 45,
-    "runTime": 503,
+    "runCount": 46,
+    "runTime": 520,
     "runtimeDir": null,
     "scriptField1": {
         "label": "Connection File",
