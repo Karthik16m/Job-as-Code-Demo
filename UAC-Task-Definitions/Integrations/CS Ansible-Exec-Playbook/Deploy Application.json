@@ -1,0 +1,411 @@
+{
+    "type": "taskUniversal",
+    "actions": {
+        "abortActions": [],
+        "emailNotifications": [],
+        "setVariableActions": [
+            {
+                "description": null,
+                "exitCodes": null,
+                "notificationOption": "Operation Failure",
+                "notifyOnEarlyFinish": false,
+                "notifyOnLateFinish": false,
+                "notifyOnLateStart": false,
+                "notifyOnProjectedLate": false,
+                "status": "Failed",
+                "sysId": "4d14332f02be4a49801c637fe0329d4f",
+                "variableName": "workflow_name_wisag",
+                "variableScope": "Global",
+                "variableValue": "${ops_workflow_name}"
+            },
+            {
+                "description": null,
+                "exitCodes": null,
+                "notificationOption": "Operation Failure",
+                "notifyOnEarlyFinish": false,
+                "notifyOnLateFinish": false,
+                "notifyOnLateStart": false,
+                "notifyOnProjectedLate": false,
+                "status": "Failed",
+                "sysId": "56da02641675448fbdc1fc69c362ad73",
+                "variableName": "failed_task_output",
+                "variableScope": "Global",
+                "variableValue": "${_outputLines('STDOUT', 1, 100, '',' ')}"
+            },
+            {
+                "description": null,
+                "exitCodes": null,
+                "notificationOption": "Operation Failure",
+                "notifyOnEarlyFinish": false,
+                "notifyOnLateFinish": false,
+                "notifyOnLateStart": false,
+                "notifyOnProjectedLate": false,
+                "status": "Success",
+                "sysId": "83f1af57f37a4067b48e502620d0126c",
+                "variableName": "cluster_name",
+                "variableScope": "Parent",
+                "variableValue": "DemoCluster1"
+            },
+            {
+                "description": null,
+                "exitCodes": null,
+                "notificationOption": "Operation Failure",
+                "notifyOnEarlyFinish": false,
+                "notifyOnLateFinish": false,
+                "notifyOnLateStart": false,
+                "notifyOnProjectedLate": false,
+                "status": "Failed",
+                "sysId": "b0652c7771b0439d91b81155d690c965",
+                "variableName": "failed_task_name",
+                "variableScope": "Global",
+                "variableValue": "${ops_task_name}"
+            }
+        ],
+        "snmpNotifications": [],
+        "systemOperations": [
+            {
+                "agent": null,
+                "agentCluster": null,
+                "agentClusterVar": null,
+                "agentVar": null,
+                "description": null,
+                "execCommand": "Cancel",
+                "execCriteria": "Oldest Active Instance",
+                "execId": null,
+                "execLookupOption": "Instance Name",
+                "execName": null,
+                "execWorkflowName": null,
+                "execWorkflowNameCond": "Equals",
+                "exitCodes": null,
+                "limit": null,
+                "notificationOption": "Operation Failure",
+                "notifyOnEarlyFinish": false,
+                "notifyOnLateFinish": false,
+                "notifyOnLateStart": false,
+                "notifyOnProjectedLate": false,
+                "operation": "Launch Task",
+                "overrideTriggerDateOffset": null,
+                "overrideTriggerDateTime": false,
+                "overrideTriggerTime": "00:00",
+                "status": "Failed",
+                "sysId": "69a2d89983e0441c9176e19f2387998c",
+                "task": "JSD Request Creation-Demo",
+                "taskLimitType": "Unlimited",
+                "taskVar": null,
+                "trigger": null,
+                "triggerVar": null,
+                "variables": [
+                    {
+                        "name": "taskname",
+                        "value": "${ops_task_name}"
+                    },
+                    {
+                        "name": "failed_output",
+                        "value": "${failed_task_output}"
+                    }
+                ],
+                "variablesUnresolved": false,
+                "vertexSelection": false,
+                "vertices": [],
+                "virtualResource": null,
+                "virtualResourceVar": null
+            },
+            {
+                "agent": null,
+                "agentCluster": null,
+                "agentClusterVar": null,
+                "agentVar": null,
+                "description": null,
+                "execCommand": "Cancel",
+                "execCriteria": "Oldest Active Instance",
+                "execId": null,
+                "execLookupOption": "Instance Name",
+                "execName": null,
+                "execWorkflowName": null,
+                "execWorkflowNameCond": "Equals",
+                "exitCodes": null,
+                "limit": null,
+                "notificationOption": "Operation Failure",
+                "notifyOnEarlyFinish": false,
+                "notifyOnLateFinish": false,
+                "notifyOnLateStart": false,
+                "notifyOnProjectedLate": false,
+                "operation": "Launch Task",
+                "overrideTriggerDateOffset": null,
+                "overrideTriggerDateTime": false,
+                "overrideTriggerTime": "00:00",
+                "status": "Failed",
+                "sysId": "756dd2ae88f8429a8e59e41781c09a18",
+                "task": "Create SNOW Incident DEMO-dev92611 with Attachement",
+                "taskLimitType": "Unlimited",
+                "taskVar": null,
+                "trigger": null,
+                "triggerVar": null,
+                "variables": [
+                    {
+                        "name": "sib_failed_task_name",
+                        "value": "${ops_task_name}"
+                    },
+                    {
+                        "name": "sib_task_output",
+                        "value": "${failed_task_output}"
+                    },
+                    {
+                        "name": "task_id",
+                        "value": "${ops_task_id}"
+                    },
+                    {
+                        "name": "workflow_name",
+                        "value": "${ops_workflow_name}"
+                    }
+                ],
+                "variablesUnresolved": false,
+                "vertexSelection": false,
+                "vertices": [],
+                "virtualResource": null,
+                "virtualResourceVar": null
+            },
+            {
+                "agent": null,
+                "agentCluster": null,
+                "agentClusterVar": null,
+                "agentVar": null,
+                "description": null,
+                "execCommand": "Cancel",
+                "execCriteria": "Oldest Active Instance",
+                "execId": null,
+                "execLookupOption": "Instance Name",
+                "execName": null,
+                "execWorkflowName": null,
+                "execWorkflowNameCond": "Equals",
+                "exitCodes": null,
+                "limit": null,
+                "notificationOption": "Operation Failure",
+                "notifyOnEarlyFinish": false,
+                "notifyOnLateFinish": false,
+                "notifyOnLateStart": false,
+                "notifyOnProjectedLate": false,
+                "operation": "Launch Task",
+                "overrideTriggerDateOffset": null,
+                "overrideTriggerDateTime": false,
+                "overrideTriggerTime": "00:00",
+                "status": "Failed",
+                "sysId": "dc71ba7571df434a96d6d10db995c489",
+                "task": "Fail-Notif-Teams",
+                "taskLimitType": "Unlimited",
+                "taskVar": null,
+                "trigger": null,
+                "triggerVar": null,
+                "variables": [
+                    {
+                        "name": "task_name",
+                        "value": "${ops_task_name}"
+                    },
+                    {
+                        "name": "task_status",
+                        "value": "${ops_status}"
+                    },
+                    {
+                        "name": "exec_user",
+                        "value": "${ops_execution_user}"
+                    },
+                    {
+                        "name": "job_type",
+                        "value": "${ops_task_type}"
+                    }
+                ],
+                "variablesUnresolved": false,
+                "vertexSelection": false,
+                "vertices": [],
+                "virtualResource": null,
+                "virtualResourceVar": null
+            }
+        ]
+    },
+    "agent": "Ansible",
+    "agentCluster": null,
+    "agentClusterVar": null,
+    "agentVar": null,
+    "autoCleanup": false,
+    "avgRunTime": 82,
+    "avgRunTimeDisplay": "1 Minute 22 Seconds",
+    "booleanField1": {
+        "label": "Default Ansible Inventory",
+        "name": "default_inventory",
+        "value": false
+    },
+    "broadcastCluster": null,
+    "broadcastClusterVar": null,
+    "choiceField1": {
+        "label": "Execution choice",
+        "name": "exec_option",
+        "value": "script"
+    },
+    "choiceField2": {
+        "label": "Ansible Utility",
+        "name": "ansible_utility",
+        "value": "Ansible-Playbook"
+    },
+    "cpDuration": null,
+    "cpDurationUnit": "Minutes",
+    "createConsole": false,
+    "credentials": "KM-Terraform",
+    "credentialsVar": null,
+    "customField1": {
+        "label": "Custom Field 1",
+        "value": null
+    },
+    "customField2": {
+        "label": "Output Link",
+        "value": null
+    },
+    "desktopInteract": false,
+    "efDayConstraint": "None",
+    "efDuration": "00:00:00:00",
+    "efEnabled": false,
+    "efNthAmount": 5,
+    "efOffsetDuration": null,
+    "efOffsetDurationUnit": "Minutes",
+    "efOffsetPercentage": 0,
+    "efOffsetType": "Percentage",
+    "efTime": "00:00",
+    "efType": "Time",
+    "elevateUser": false,
+    "enforceVariables": false,
+    "environment": [
+        {
+            "name": "ANSIBLE_HOST_KEY_CHECKING",
+            "value": "False"
+        }
+    ],
+    "exclusiveTasks": [],
+    "exclusiveWithSelf": false,
+    "executionRestriction": "None",
+    "exitCodeOutput": null,
+    "exitCodeProcessing": "Success Exitcode Range",
+    "exitCodeText": null,
+    "exitCodes": "0",
+    "exportReleaseLevel": "7.6.0.0",
+    "exportTable": "ops_task_universal",
+    "firstRun": "2024-05-07 18:08:01 +0200",
+    "holdResources": false,
+    "lastRun": "2024-06-10 10:49:02 +0200",
+    "lastRunTime": 75,
+    "lastRunTimeDisplay": "1 Minute 15 Seconds",
+    "lfDayConstraint": "None",
+    "lfDuration": "00:00:00:00",
+    "lfEnabled": false,
+    "lfNthAmount": 5,
+    "lfOffsetDuration": null,
+    "lfOffsetDurationUnit": "Minutes",
+    "lfOffsetPercentage": 0,
+    "lfOffsetType": "Percentage",
+    "lfTime": "00:00",
+    "lfType": "Time",
+    "lockVariables": false,
+    "logLevel": "Inherited",
+    "lsDayConstraint": "None",
+    "lsDuration": "00:00:00:00",
+    "lsEnabled": false,
+    "lsNthAmount": 5,
+    "lsTime": "00:00",
+    "lsType": "Time",
+    "maxRunTime": 94,
+    "maxRunTimeDisplay": "1 Minute 34 Seconds",
+    "minRunTime": 71,
+    "minRunTimeDisplay": "1 Minute 11 Seconds",
+    "name": "Deploy Application",
+    "notes": [
+        {
+            "sysId": "da09aeedb8fd4cadb8469369c8134727",
+            "text": "ansible -i ${_scriptPath('${ops_AN_uac_ansible_inventory}')} -m ping",
+            "title": "Command"
+        }
+    ],
+    "opswiseGroups": [
+        "IEEE_DEMO"
+    ],
+    "outputConditionOperator": "=",
+    "outputConditionStrategy": "Match Any",
+    "outputConditionValue": null,
+    "outputContentType": null,
+    "outputFailureOnly": false,
+    "outputPathExpression": null,
+    "outputReturnFile": null,
+    "outputReturnNline": "100",
+    "outputReturnSline": "1",
+    "outputReturnText": null,
+    "outputReturnType": "NONE",
+    "outputType": "STDOUT",
+    "overrideInstanceWait": "No",
+    "resPriority": 10,
+    "resolveNameImmediately": false,
+    "restrictionPeriod": "None",
+    "restrictionPeriodAfterDate": null,
+    "restrictionPeriodAfterTime": null,
+    "restrictionPeriodBeforeDate": null,
+    "restrictionPeriodBeforeTime": null,
+    "restrictionPeriodDateList": [],
+    "retainSysIds": true,
+    "retryExitCodes": null,
+    "retryIndefinitely": false,
+    "retryInterval": 20,
+    "retryMaximum": 3,
+    "retrySuppressFailure": true,
+    "runCount": 5,
+    "runTime": 408,
+    "runtimeDir": null,
+    "scriptField1": {
+        "label": "Ansible Playbook Script",
+        "name": "playbook_script",
+        "value": "aws_playbook.yml"
+    },
+    "scriptField2": {
+        "label": "UAC Ansible Inventory",
+        "name": "uac_ansible_inventory",
+        "value": "KM-Ansible-Inventory"
+    },
+    "simulation": false,
+    "startHeld": false,
+    "startHeldReason": null,
+    "summary": "Ansible Inventory from UAC",
+    "sysId": "e05d805784ee47fe8da10b63993e77a6",
+    "template": "CS Ansible-Exec-Playbook",
+    "textField1": {
+        "label": "Ansible Playbook",
+        "name": "ansible_playbook",
+        "value": null
+    },
+    "textField2": {
+        "label": "Default Ansible Inventory",
+        "name": "ansible_inventory",
+        "value": "/etc/ansible/hosts"
+    },
+    "textField3": {
+        "label": "Ansible Command Options",
+        "name": "other_parameters",
+        "value": null
+    },
+    "timeZonePref": "-- System Default --",
+    "twDelayAmount": "20",
+    "twDelayDuration": "00:00:00:00",
+    "twDelayType": "Seconds",
+    "twWaitAmount": null,
+    "twWaitDayConstraint": "None",
+    "twWaitDuration": "00:00:00:00",
+    "twWaitTime": "00:00",
+    "twWaitType": "None",
+    "twWorkflowOnly": "-- System Default --",
+    "userEstimatedDuration": null,
+    "variables": [],
+    "version": 14,
+    "virtualResources": [
+        {
+            "amount": 1,
+            "resource": "ALL_JOBS",
+            "resourceVar": null,
+            "sysId": "2c75fc26a0a6426eb41d1df650cd6aed"
+        }
+    ],
+    "waitForOutput": false
+}

@@ -1,0 +1,866 @@
+{
+    "type": "taskWorkflow",
+    "actions": {
+        "abortActions": [],
+        "emailNotifications": [],
+        "setVariableActions": [],
+        "snmpNotifications": [],
+        "systemOperations": []
+    },
+    "avgRunTime": 1328,
+    "avgRunTimeDisplay": "22 Minutes 8 Seconds",
+    "calculateCp": false,
+    "calendar": null,
+    "cpDuration": null,
+    "cpDurationUnit": "Minutes",
+    "criticalEndpoints": [],
+    "customField1": {
+        "label": "Custom Field 1",
+        "value": null
+    },
+    "customField2": {
+        "label": "Output Link",
+        "value": null
+    },
+    "efDayConstraint": "None",
+    "efDuration": "00:00:00:00",
+    "efEnabled": false,
+    "efNthAmount": 5,
+    "efOffsetDuration": null,
+    "efOffsetDurationUnit": "Minutes",
+    "efOffsetPercentage": 0,
+    "efOffsetType": "Percentage",
+    "efTime": "00:00",
+    "efType": "Time",
+    "enforceVariables": false,
+    "exclusiveTasks": [],
+    "exclusiveWithSelf": false,
+    "executionRestriction": "None",
+    "exportReleaseLevel": "7.6.0.0",
+    "exportTable": "ops_task_workflow",
+    "firstRun": "2024-05-06 13:40:23 +0200",
+    "holdResources": false,
+    "instanceWait": "-- None --",
+    "lastRun": "2024-05-07 13:54:34 +0200",
+    "lastRunTime": 679,
+    "lastRunTimeDisplay": "11 Minutes 19 Seconds",
+    "layoutOption": "-- None --",
+    "lfDayConstraint": "None",
+    "lfDuration": "00:00:00:00",
+    "lfEnabled": false,
+    "lfNthAmount": 5,
+    "lfOffsetDuration": null,
+    "lfOffsetDurationUnit": "Minutes",
+    "lfOffsetPercentage": 0,
+    "lfOffsetType": "Percentage",
+    "lfTime": "00:00",
+    "lfType": "Time",
+    "lockVariables": false,
+    "logLevel": "Inherited",
+    "lsDayConstraint": "None",
+    "lsDuration": "00:00:00:00",
+    "lsEnabled": false,
+    "lsNthAmount": 5,
+    "lsTime": "00:00",
+    "lsType": "Time",
+    "maxRunTime": 2715,
+    "maxRunTimeDisplay": "45 Minutes 15 Seconds",
+    "minRunTime": 391,
+    "minRunTimeDisplay": "6 Minutes 31 Seconds",
+    "name": "KM-Demo-Hybrid-Orchestration",
+    "notes": [],
+    "numberOfTasks": 26,
+    "opswiseGroups": [
+        "Critical/Priority",
+        "Karthik Mohan"
+    ],
+    "overrideCalendar": false,
+    "overrideInstanceWait": "No",
+    "resPriority": 10,
+    "resolveNameImmediately": false,
+    "restrictionPeriod": "None",
+    "restrictionPeriodAfterDate": null,
+    "restrictionPeriodAfterTime": null,
+    "restrictionPeriodBeforeDate": null,
+    "restrictionPeriodBeforeTime": null,
+    "restrictionPeriodDateList": [],
+    "retainSysIds": true,
+    "runCount": 4,
+    "runCriteria": [
+        {
+            "businessDay": false,
+            "complex": false,
+            "complexAdjective": "Every",
+            "complexAdjustment": "None",
+            "complexAdjustmentAmount": 1,
+            "complexAdjustmentType": "Day",
+            "complexNoun": {
+                "value": "Day"
+            },
+            "complexNouns": [
+                {
+                    "value": "Day"
+                }
+            ],
+            "complexNthAmount": 5,
+            "complexQualifier": {
+                "value": "Year"
+            },
+            "complexQualifiers": [
+                {
+                    "value": "Year"
+                }
+            ],
+            "customDay": false,
+            "customDayChoice": null,
+            "description": null,
+            "evaluateAt": "Trigger Time",
+            "holiday": false,
+            "holidayAdjustment": "None",
+            "holidayAdjustmentAmount": 1,
+            "holidayAdjustmentType": "Day",
+            "specificDay": true,
+            "specificDayFri": false,
+            "specificDayMon": false,
+            "specificDaySat": false,
+            "specificDaySun": false,
+            "specificDayThu": false,
+            "specificDayTue": true,
+            "specificDayWed": false,
+            "sysId": "ef7888e04c2b462e86eece93ed72882b",
+            "task": "KM System Provisioning",
+            "type": "Skip Criteria",
+            "variable": false,
+            "variableName": null,
+            "variableOp": "=",
+            "variableValue": null,
+            "vertexId": "Any"
+        }
+    ],
+    "runTime": 5310,
+    "simulation": false,
+    "skippedOption": "Show Skipped",
+    "startHeld": false,
+    "startHeldReason": null,
+    "stepActions": [],
+    "stepConditions": [],
+    "summary": "Demo Workflow for Intercloud File Transfer",
+    "sysId": "f00947d399cf48e2b8f725a682c8f25f",
+    "timeZonePref": "-- System Default --",
+    "twDelayAmount": null,
+    "twDelayDuration": "00:00:00:00",
+    "twDelayType": "None",
+    "twWaitAmount": null,
+    "twWaitDayConstraint": "None",
+    "twWaitDuration": "00:00:00:00",
+    "twWaitTime": "00:00",
+    "twWaitType": "None",
+    "twWorkflowOnly": "-- System Default --",
+    "userEstimatedDuration": null,
+    "variables": [
+        {
+            "allowEmptyOption": false,
+            "allowUnlistedOption": false,
+            "description": null,
+            "name": "customer_label",
+            "options": [],
+            "sysId": "c27a45fe59714e7d99a267e76a1c12e8",
+            "value": "CUST_KM"
+        },
+        {
+            "allowEmptyOption": false,
+            "allowUnlistedOption": false,
+            "description": null,
+            "name": "customer_name",
+            "options": [],
+            "sysId": "cd6f43cc0bd54d06b5dd2b4f72043731",
+            "value": "CUST_KM"
+        },
+        {
+            "allowEmptyOption": false,
+            "allowUnlistedOption": false,
+            "description": "Email Notification",
+            "name": "email",
+            "options": [
+                "kathik.mohan@stonebranch.com",
+                "omar.siala@stonebranch.com"
+            ],
+            "sysId": "0ee1b60c86c74fa3bd55ea49435a389e",
+            "value": "karthik.mohan@stonebranch.com"
+        }
+    ],
+    "version": 93,
+    "virtualResources": [],
+    "workflowEdges": [
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskAlias": "Monitor-Input-Files",
+                "taskName": "Monitor-new-Seller-FIle",
+                "value": "38"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskAlias": "Transfer Data to Repo",
+                "taskName": "Transfer Seller data to SAP",
+                "value": "39"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "points": [
+                {
+                    "x": "-360",
+                    "y": ""
+                }
+            ],
+            "sourceId": {
+                "taskAlias": "SO-DATA-EXT-WIN",
+                "taskName": "SERVICE-ORDER-EXTRACT-MSSQL",
+                "value": "94"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskAlias": "Transfer Data to Repo",
+                "taskName": "Transfer Seller data to SAP",
+                "value": "39"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskAlias": "Upload-SO-Files-Azure-Storage ",
+                "taskName": "Upload-SO-Files-Azure-Storage",
+                "value": "42"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskAlias": "Run-Azure-datafactory-Pipeline",
+                "taskName": "Run-Azure-datafactory-Pipeline - With parameters",
+                "value": "96"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "points": [
+                {
+                    "x": "-50",
+                    "y": "-90"
+                }
+            ],
+            "sourceId": {
+                "taskName": "Approval-To-Publish-Analytics",
+                "value": "26"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskName": "Upload-SO-Files-AWS-S3",
+                "value": "6"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "points": [
+                {
+                    "x": "-30",
+                    "y": "-30"
+                }
+            ],
+            "sourceId": {
+                "taskName": "Approval-To-Publish-Analytics",
+                "value": "26"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskAlias": "Upload-SO-Files-Azure-Storage ",
+                "taskName": "Upload-SO-Files-Azure-Storage",
+                "value": "42"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskAlias": "Transfer Data to Repo",
+                "taskName": "Transfer Seller data to SAP",
+                "value": "39"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskName": "Approval-To-Publish-Analytics",
+                "value": "26"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskName": "Git Checkout Terraform - AWS",
+                "value": "119"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskAlias": "Terraform Init",
+                "taskName": "KM-Terraform Init-AWS",
+                "value": "117"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskAlias": "Terraform Init",
+                "taskName": "KM-Terraform Init-AWS",
+                "value": "117"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskName": "Terraform Plan",
+                "value": "118"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskName": "Terraform Plan",
+                "value": "118"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskName": "Terraform Apply",
+                "value": "115"
+            }
+        },
+        {
+            "condition": {
+                "value": "Failure"
+            },
+            "sourceId": {
+                "taskName": "Terraform Apply",
+                "value": "115"
+            },
+            "straightEdge": true,
+            "targetId": {
+                "taskName": "Terraform Destroy",
+                "value": "116"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskName": "Terraform Destroy",
+                "value": "116"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskAlias": "Cleanup",
+                "taskName": "KM-Terraform-AWS-Cleanup",
+                "value": "129"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskName": "Terraform Apply",
+                "value": "115"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskName": "Create Ansible Inventory File",
+                "value": "126"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskName": "Create Ansible Inventory File",
+                "value": "126"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskName": "Deploy Application",
+                "value": "127"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskName": "Approval-To-Publish-Analytics",
+                "value": "26"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskName": "Git Checkout Terraform - AWS",
+                "value": "119"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskName": "Approval-To-Publish-Analytics",
+                "value": "26"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskAlias": "System Provisioning",
+                "taskName": "KM System Provisioning",
+                "value": "141"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskName": "Upload-SO-Files-AWS-S3",
+                "value": "6"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskName": "KM-Step Function-Task",
+                "value": "144"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskName": "KM-Step Function-Task",
+                "value": "144"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskName": "Transfer from AWS S3 to Azure Blob",
+                "value": "74"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskAlias": "System Provisioning",
+                "taskName": "KM System Provisioning",
+                "value": "141"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskAlias": "Process-SAP-extracts",
+                "taskName": "SAP_Z_COMMISSION_RUN_Daily2",
+                "value": "147"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskAlias": "Process-SAP-extracts",
+                "taskName": "SAP_Z_COMMISSION_RUN_Daily2",
+                "value": "147"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskAlias": "Load Data from Azure Blob ",
+                "taskName": "Load Data from Azure Blob - Mroos",
+                "value": "148"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskAlias": "Load Data from Azure Blob ",
+                "taskName": "Load Data from Azure Blob - Mroos",
+                "value": "148"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskName": "Refresh-workbook",
+                "value": "149"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskName": "Approval-To-Publish-Analytics",
+                "value": "26"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskAlias": "Create POD",
+                "taskName": "kubernetes new ua-pod template - create ",
+                "value": "153"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskAlias": "Create POD",
+                "taskName": "kubernetes new ua-pod template - create ",
+                "value": "153"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskAlias": "List POD",
+                "taskName": "List Kubernetes",
+                "value": "154"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskAlias": "List POD",
+                "taskName": "List Kubernetes",
+                "value": "154"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskAlias": "Delete POD",
+                "taskName": "DELETE-APP1-POD-BATCH-01 - Copy",
+                "value": "155"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskName": "Transfer from AWS S3 to Azure Blob",
+                "value": "74"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskName": "Email-Report-Completion",
+                "value": "164"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskAlias": "Run-Azure-datafactory-Pipeline",
+                "taskName": "Run-Azure-datafactory-Pipeline - With parameters",
+                "value": "96"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskName": "Email-Report-Completion",
+                "value": "164"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskName": "Refresh-workbook",
+                "value": "149"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskName": "Email-Report-Completion",
+                "value": "164"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskAlias": "Delete POD",
+                "taskName": "DELETE-APP1-POD-BATCH-01 - Copy",
+                "value": "155"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskName": "Email-Report-Completion",
+                "value": "164"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskName": "Deploy Application",
+                "value": "127"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskName": "Email-Report-Completion",
+                "value": "164"
+            }
+        }
+    ],
+    "workflowVertices": [
+        {
+            "alias": null,
+            "task": {
+                "value": "Upload-SO-Files-AWS-S3"
+            },
+            "vertexId": "6",
+            "vertexX": "91.5",
+            "vertexY": "-310"
+        },
+        {
+            "alias": null,
+            "task": {
+                "value": "Approval-To-Publish-Analytics"
+            },
+            "vertexId": "26",
+            "vertexX": "-70",
+            "vertexY": "40"
+        },
+        {
+            "alias": "Monitor-Input-Files",
+            "task": {
+                "value": "Monitor-new-Seller-FIle"
+            },
+            "vertexId": "38",
+            "vertexX": "-550",
+            "vertexY": "160"
+        },
+        {
+            "alias": "Transfer Data to Repo",
+            "task": {
+                "value": "Transfer Seller data to SAP"
+            },
+            "vertexId": "39",
+            "vertexX": "-245",
+            "vertexY": "40"
+        },
+        {
+            "alias": "Upload-SO-Files-Azure-Storage ",
+            "task": {
+                "value": "Upload-SO-Files-Azure-Storage"
+            },
+            "vertexId": "42",
+            "vertexX": "90",
+            "vertexY": "-130"
+        },
+        {
+            "alias": "Update-Sales-Data",
+            "task": {
+                "value": "Update-Sales-Data-SAP"
+            },
+            "vertexId": "58",
+            "vertexX": "-554",
+            "vertexY": "323"
+        },
+        {
+            "alias": null,
+            "task": {
+                "value": "Transfer from AWS S3 to Azure Blob"
+            },
+            "vertexId": "74",
+            "vertexX": "590",
+            "vertexY": "-310"
+        },
+        {
+            "alias": "SO-DATA-EXT-WIN",
+            "task": {
+                "value": "SERVICE-ORDER-EXTRACT-MSSQL"
+            },
+            "vertexId": "94",
+            "vertexX": "-559",
+            "vertexY": "-92"
+        },
+        {
+            "alias": "Run-Azure-datafactory-Pipeline",
+            "task": {
+                "value": "Run-Azure-datafactory-Pipeline - With parameters"
+            },
+            "vertexId": "96",
+            "vertexX": "350",
+            "vertexY": "-130"
+        },
+        {
+            "alias": null,
+            "task": {
+                "value": "Terraform Apply"
+            },
+            "vertexId": "115",
+            "vertexX": "470",
+            "vertexY": "320"
+        },
+        {
+            "alias": null,
+            "task": {
+                "value": "Terraform Destroy"
+            },
+            "vertexId": "116",
+            "vertexX": "470",
+            "vertexY": "470"
+        },
+        {
+            "alias": "Terraform Init",
+            "task": {
+                "value": "KM-Terraform Init-AWS"
+            },
+            "vertexId": "117",
+            "vertexX": "160",
+            "vertexY": "320"
+        },
+        {
+            "alias": null,
+            "task": {
+                "value": "Terraform Plan"
+            },
+            "vertexId": "118",
+            "vertexX": "320",
+            "vertexY": "320"
+        },
+        {
+            "alias": null,
+            "task": {
+                "value": "Git Checkout Terraform - AWS"
+            },
+            "vertexId": "119",
+            "vertexX": "-60",
+            "vertexY": "320"
+        },
+        {
+            "alias": null,
+            "task": {
+                "value": "Create Ansible Inventory File"
+            },
+            "vertexId": "126",
+            "vertexX": "650",
+            "vertexY": "320"
+        },
+        {
+            "alias": null,
+            "task": {
+                "value": "Deploy Application"
+            },
+            "vertexId": "127",
+            "vertexX": "850",
+            "vertexY": "320"
+        },
+        {
+            "alias": "Cleanup",
+            "task": {
+                "value": "KM-Terraform-AWS-Cleanup"
+            },
+            "vertexId": "129",
+            "vertexX": "470",
+            "vertexY": "620"
+        },
+        {
+            "alias": "System Provisioning",
+            "task": {
+                "value": "KM System Provisioning"
+            },
+            "vertexId": "141",
+            "vertexX": "120",
+            "vertexY": "40"
+        },
+        {
+            "alias": null,
+            "task": {
+                "value": "KM-Step Function-Task"
+            },
+            "vertexId": "144",
+            "vertexX": "320",
+            "vertexY": "-310"
+        },
+        {
+            "alias": "Process-SAP-extracts",
+            "task": {
+                "value": "SAP_Z_COMMISSION_RUN_Daily2"
+            },
+            "vertexId": "147",
+            "vertexX": "320",
+            "vertexY": "40"
+        },
+        {
+            "alias": "Load Data from Azure Blob ",
+            "task": {
+                "value": "Load Data from Azure Blob - Mroos"
+            },
+            "vertexId": "148",
+            "vertexX": "540",
+            "vertexY": "40"
+        },
+        {
+            "alias": null,
+            "task": {
+                "value": "Refresh-workbook"
+            },
+            "vertexId": "149",
+            "vertexX": "740",
+            "vertexY": "40"
+        },
+        {
+            "alias": "Create POD",
+            "task": {
+                "value": "kubernetes new ua-pod template - create "
+            },
+            "vertexId": "153",
+            "vertexX": "110",
+            "vertexY": "180"
+        },
+        {
+            "alias": "List POD",
+            "task": {
+                "value": "List Kubernetes"
+            },
+            "vertexId": "154",
+            "vertexX": "330",
+            "vertexY": "180"
+        },
+        {
+            "alias": "Delete POD",
+            "task": {
+                "value": "DELETE-APP1-POD-BATCH-01 - Copy"
+            },
+            "vertexId": "155",
+            "vertexX": "540",
+            "vertexY": "180"
+        },
+        {
+            "alias": null,
+            "task": {
+                "value": "Email-Report-Completion"
+            },
+            "vertexId": "164",
+            "vertexX": "1153",
+            "vertexY": "-74"
+        }
+    ]
+}

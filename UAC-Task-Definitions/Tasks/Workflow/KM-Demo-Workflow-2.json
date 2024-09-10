@@ -7,8 +7,8 @@
         "snmpNotifications": [],
         "systemOperations": []
     },
-    "avgRunTime": 806,
-    "avgRunTimeDisplay": "13 Minutes 26 Seconds",
+    "avgRunTime": 926,
+    "avgRunTimeDisplay": "15 Minutes 26 Seconds",
     "calculateCp": false,
     "calendar": null,
     "cpDuration": null,
@@ -41,9 +41,9 @@
     "firstRun": "2024-01-29 13:15:17 +0100",
     "holdResources": false,
     "instanceWait": "-- None --",
-    "lastRun": "2024-09-09 16:23:33 +0200",
-    "lastRunTime": 561,
-    "lastRunTimeDisplay": "9 Minutes 21 Seconds",
+    "lastRun": "2024-09-10 13:02:21 +0200",
+    "lastRunTime": 1166,
+    "lastRunTimeDisplay": "19 Minutes 26 Seconds",
     "layoutOption": "-- None --",
     "lfDayConstraint": "None",
     "lfDuration": "00:00:00:00",
@@ -63,13 +63,13 @@
     "lsNthAmount": 5,
     "lsTime": "00:00",
     "lsType": "Time",
-    "maxRunTime": 1050,
-    "maxRunTimeDisplay": "17 Minutes 30 Seconds",
+    "maxRunTime": 1166,
+    "maxRunTimeDisplay": "19 Minutes 26 Seconds",
     "minRunTime": 561,
     "minRunTimeDisplay": "9 Minutes 21 Seconds",
     "name": "KM-Demo-Workflow-2",
     "notes": [],
-    "numberOfTasks": 20,
+    "numberOfTasks": 19,
     "opswiseGroups": [
         "Karthik Mohan"
     ],
@@ -84,7 +84,7 @@
     "restrictionPeriodBeforeTime": null,
     "restrictionPeriodDateList": [],
     "retainSysIds": true,
-    "runCount": 2,
+    "runCount": 3,
     "runCriteria": [
         {
             "businessDay": false,
@@ -134,9 +134,58 @@
             "variableOp": "=",
             "variableValue": null,
             "vertexId": "233"
+        },
+        {
+            "businessDay": true,
+            "complex": false,
+            "complexAdjective": "Every",
+            "complexAdjustment": "None",
+            "complexAdjustmentAmount": 1,
+            "complexAdjustmentType": "Day",
+            "complexNoun": {
+                "value": "Day"
+            },
+            "complexNouns": [
+                {
+                    "value": "Day"
+                }
+            ],
+            "complexNthAmount": 5,
+            "complexQualifier": {
+                "value": "Year"
+            },
+            "complexQualifiers": [
+                {
+                    "value": "Year"
+                }
+            ],
+            "customDay": false,
+            "customDayChoice": null,
+            "description": null,
+            "evaluateAt": "Trigger Time",
+            "holiday": false,
+            "holidayAdjustment": "None",
+            "holidayAdjustmentAmount": 1,
+            "holidayAdjustmentType": "Day",
+            "specificDay": false,
+            "specificDayFri": false,
+            "specificDayMon": false,
+            "specificDaySat": false,
+            "specificDaySun": false,
+            "specificDayThu": false,
+            "specificDayTue": false,
+            "specificDayWed": false,
+            "sysId": "8470c610937248968b4f3c332c65c0c2",
+            "task": "KM-Demo-Hybrid-Orchestration",
+            "type": "Skip Criteria",
+            "variable": false,
+            "variableName": null,
+            "variableOp": "=",
+            "variableValue": null,
+            "vertexId": "Any"
         }
     ],
-    "runTime": 1611,
+    "runTime": 2777,
     "simulation": false,
     "skippedOption": "Show Skipped",
     "startHeld": false,
@@ -176,7 +225,7 @@
             "value": "mf_file_openshift.txt"
         }
     ],
-    "version": 35,
+    "version": 42,
     "virtualResources": [],
     "workflowEdges": [
         {
@@ -346,22 +395,6 @@
                 "value": "Success"
             },
             "sourceId": {
-                "taskAlias": "SQL-BI-PROCESS-2(SNMP TRAP)",
-                "taskName": "LOAD-BILL-DATA-2-SET-TO-FAIL",
-                "value": "264"
-            },
-            "straightEdge": false,
-            "targetId": {
-                "taskAlias": "BI-SQL-PROCESS-3",
-                "taskName": "APP3-${ENV}-MSSQL-SEL_QUERY-2",
-                "value": "31"
-            }
-        },
-        {
-            "condition": {
-                "value": "Success"
-            },
-            "sourceId": {
                 "taskAlias": "START-SALES-ORDER-PROCESS",
                 "taskName": "START-BILLING-PROCESS",
                 "value": "15"
@@ -370,43 +403,6 @@
             "targetId": {
                 "taskName": "MF-TO-WINDOWS-ENCRPT-AND-COMPRESSED",
                 "value": "336"
-            }
-        },
-        {
-            "condition": {
-                "value": "Success"
-            },
-            "sourceId": {
-                "taskName": "CHECK-MEMORY-UTIL",
-                "value": "52"
-            },
-            "straightEdge": false,
-            "targetId": {
-                "taskAlias": "APPROVAL-MS-TEAMS-OR-SLACK-TO-START-SAP-PROCESS",
-                "taskName": "APPROVAL-SALES-ORDER-PROCESS",
-                "value": "168"
-            }
-        },
-        {
-            "condition": {
-                "value": "Success"
-            },
-            "points": [
-                {
-                    "x": "480",
-                    "y": "760"
-                }
-            ],
-            "sourceId": {
-                "taskAlias": "APPROVAL-MS-TEAMS-OR-SLACK-TO-START-SAP-PROCESS",
-                "taskName": "APPROVAL-SALES-ORDER-PROCESS",
-                "value": "168"
-            },
-            "straightEdge": false,
-            "targetId": {
-                "taskAlias": "SQL-BI-PROCESS-2(SNMP TRAP)",
-                "taskName": "LOAD-BILL-DATA-2-SET-TO-FAIL",
-                "value": "264"
             }
         },
         {
@@ -423,37 +419,6 @@
                 "taskAlias": "Failure Scenario",
                 "taskName": "KM-SCAN-DATA-FILE-AND-FORMAT",
                 "value": "317"
-            }
-        },
-        {
-            "condition": {
-                "value": "Success"
-            },
-            "sourceId": {
-                "taskAlias": "APPROVAL-MS-TEAMS-OR-SLACK-TO-START-SAP-PROCESS",
-                "taskName": "APPROVAL-SALES-ORDER-PROCESS",
-                "value": "168"
-            },
-            "straightEdge": true,
-            "targetId": {
-                "taskAlias": "SAP-PROCESS-SALES-ORDER-2",
-                "taskName": "SAP-PR-BILL-DAT-2",
-                "value": "127"
-            }
-        },
-        {
-            "condition": {
-                "value": "Success"
-            },
-            "sourceId": {
-                "taskAlias": "APPROVAL-MS-TEAMS-OR-SLACK-TO-START-SAP-PROCESS",
-                "taskName": "APPROVAL-SALES-ORDER-PROCESS",
-                "value": "168"
-            },
-            "straightEdge": false,
-            "targetId": {
-                "taskName": "JaC-Push-to-Github",
-                "value": "368"
             }
         },
         {
@@ -484,6 +449,65 @@
                 "taskName": "Transfer from AWS S3 to Azure Blob",
                 "value": "366"
             }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskName": "CHECK-MEMORY-UTIL",
+                "value": "52"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskName": "JaC-Push-to-Github",
+                "value": "368"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskName": "JaC-Push-to-Github",
+                "value": "368"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskAlias": "SAP-PROCESS-SALES-ORDER-2",
+                "taskName": "SAP-PR-BILL-DAT-2",
+                "value": "127"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskName": "JaC-Push-to-Github",
+                "value": "368"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskAlias": "SQL-BI-PROCESS-2(SNMP TRAP)",
+                "taskName": "LOAD-BILL-DATA-2-SET-TO-FAIL",
+                "value": "264"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskName": "JaC-Push-to-Github",
+                "value": "368"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskAlias": "Hybrid-Orchestration",
+                "taskName": "KM-Demo-Hybrid-Orchestration",
+                "value": "376"
+            }
         }
     ],
     "workflowVertices": [
@@ -506,15 +530,6 @@
             "vertexY": "-64"
         },
         {
-            "alias": "BI-SQL-PROCESS-3",
-            "task": {
-                "value": "APP3-${ENV}-MSSQL-SEL_QUERY-2"
-            },
-            "vertexId": "31",
-            "vertexX": "84",
-            "vertexY": "800.4927536231885"
-        },
-        {
             "alias": null,
             "task": {
                 "value": "CHECK-MEMORY-UTIL"
@@ -531,15 +546,6 @@
             "vertexId": "127",
             "vertexX": "650",
             "vertexY": "880"
-        },
-        {
-            "alias": "APPROVAL-MS-TEAMS-OR-SLACK-TO-START-SAP-PROCESS",
-            "task": {
-                "value": "APPROVAL-SALES-ORDER-PROCESS"
-            },
-            "vertexId": "168",
-            "vertexX": "650",
-            "vertexY": "732"
         },
         {
             "alias": "Workflow execution report",
@@ -664,8 +670,17 @@
                 "value": "JaC-Push-to-Github"
             },
             "vertexId": "368",
-            "vertexX": "800",
-            "vertexY": "680"
+            "vertexX": "660",
+            "vertexY": "730"
+        },
+        {
+            "alias": "Hybrid-Orchestration",
+            "task": {
+                "value": "KM-Demo-Hybrid-Orchestration"
+            },
+            "vertexId": "376",
+            "vertexX": "910",
+            "vertexY": "730"
         }
     ]
 }

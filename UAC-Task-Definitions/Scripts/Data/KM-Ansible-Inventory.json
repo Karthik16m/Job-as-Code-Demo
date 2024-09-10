@@ -1,0 +1,16 @@
+{
+    "content": "${ansible_inventory}",
+    "description": null,
+    "exportReleaseLevel": "7.6.0.0",
+    "exportTable": "ops_script",
+    "notes": [],
+    "opswiseGroups": [
+        "Karthik Mohan"
+    ],
+    "resolveVariables": true,
+    "retainSysIds": true,
+    "scriptName": "KM-Ansible-Inventory",
+    "scriptType": "Data",
+    "sysId": "cec70e724cdd4750a99877518ec8dfdc",
+    "version": 3
+}

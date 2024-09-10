@@ -1,0 +1,9 @@
+{
+    "description": null,
+    "exportReleaseLevel": "7.6.0.0",
+    "exportTable": "ops_generic_group",
+    "name": "JobAsCode_DemoWorkflow",
+    "retainSysIds": true,
+    "sysId": "9d399c86e4d74e7a957c276315b6782f",
+    "version": 1
+}

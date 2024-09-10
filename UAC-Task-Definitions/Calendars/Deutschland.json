@@ -1,0 +1,85 @@
+{
+    "businessDays": {
+        "value": "Monday,Tuesday,Wednesday,Thursday,Friday"
+    },
+    "comments": "Deutschland mit allgemeinen Feiertagen",
+    "customDays": [
+        {
+            "name": "christmas",
+            "sysId": "03a5e4e1fc334a6c99e63c6955d578ac"
+        },
+        {
+            "name": "Heiligabend",
+            "sysId": "070fce134d964e42acb43c0f472e13bd"
+        },
+        {
+            "name": "Neujahr",
+            "sysId": "10ddab033a724b90b12a877e22a69dc1"
+        },
+        {
+            "name": "Karfreitag",
+            "sysId": "25d04f0704984e30b4b03dd876163b09"
+        },
+        {
+            "name": "Chr. Himmelfahrt",
+            "sysId": "289b1a39f2344cb5b9d12694ea44cd03"
+        },
+        {
+            "name": "Ostermontag",
+            "sysId": "4126a998d4274b5c8ad5fb07d97e470f"
+        },
+        {
+            "name": "Monthly Calendar",
+            "sysId": "59b278e492cf46df888401f74c250ced"
+        },
+        {
+            "name": "Tag d. dt. Einheit",
+            "sysId": "5b0aeecd893c4ddaac2753ca7f715b96"
+        },
+        {
+            "name": "Maifeiertag",
+            "sysId": "6ddda60c058e4664be31ec027280201b"
+        },
+        {
+            "name": "1. Weihnachtstag",
+            "sysId": "99f46cafc26645fca810a988842b2f1f"
+        },
+        {
+            "name": "2. Weihnachtstag",
+            "sysId": "afd591dd35694d008dd63c9ecce04d16"
+        },
+        {
+            "name": "Pfingstmontag",
+            "sysId": "bd10beef726242eb9a0ede2722345c21"
+        },
+        {
+            "name": "Silvester",
+            "sysId": "dc00ca6072964e85aa37cabbfeee71d5"
+        }
+    ],
+    "exportReleaseLevel": "7.6.0.0",
+    "exportTable": "ops_calendar",
+    "firstDayOfWeek": "Sunday",
+    "firstQuarterStart": {
+        "day": "1",
+        "month": "Jan"
+    },
+    "fourthQuarterStart": {
+        "day": "1",
+        "month": "Oct"
+    },
+    "localCustomDays": [],
+    "name": "Deutschland",
+    "opswiseGroups": [],
+    "retainSysIds": true,
+    "secondQuarterStart": {
+        "day": "1",
+        "month": "Apr"
+    },
+    "sysId": "3bfdd20aaf5c44debfe484fe61a576c3",
+    "thirdQuarterStart": {
+        "day": "1",
+        "month": "Jul"
+    },
+    "version": 3
+}

@@ -1,0 +1,484 @@
+{
+    "type": "taskWorkflow",
+    "actions": {
+        "abortActions": [],
+        "emailNotifications": [],
+        "setVariableActions": [],
+        "snmpNotifications": [],
+        "systemOperations": []
+    },
+    "calculateCp": false,
+    "calendar": "Deutschland",
+    "cpDuration": null,
+    "cpDurationUnit": "Minutes",
+    "criticalEndpoints": [],
+    "customField1": {
+        "label": "Custom Field 1",
+        "value": null
+    },
+    "customField2": {
+        "label": "Output Link",
+        "value": null
+    },
+    "efDayConstraint": "None",
+    "efDuration": "00:00:00:00",
+    "efEnabled": false,
+    "efNthAmount": 5,
+    "efOffsetDuration": null,
+    "efOffsetDurationUnit": "Minutes",
+    "efOffsetPercentage": 0,
+    "efOffsetType": "Percentage",
+    "efTime": "00:00",
+    "efType": "Time",
+    "enforceVariables": false,
+    "exclusiveTasks": [],
+    "exclusiveWithSelf": false,
+    "executionRestriction": "None",
+    "exportReleaseLevel": "7.6.0.0",
+    "exportTable": "ops_task_workflow",
+    "firstRun": "",
+    "holdResources": false,
+    "instanceWait": "-- None --",
+    "lastRun": "",
+    "layoutOption": "-- None --",
+    "lfDayConstraint": "None",
+    "lfDuration": "00:00:00:00",
+    "lfEnabled": false,
+    "lfNthAmount": 5,
+    "lfOffsetDuration": null,
+    "lfOffsetDurationUnit": "Minutes",
+    "lfOffsetPercentage": 0,
+    "lfOffsetType": "Percentage",
+    "lfTime": "00:00",
+    "lfType": "Time",
+    "lockVariables": false,
+    "logLevel": "Inherited",
+    "lsDayConstraint": "None",
+    "lsDuration": "00:00:00:00",
+    "lsEnabled": false,
+    "lsNthAmount": 5,
+    "lsTime": "00:00",
+    "lsType": "Time",
+    "name": "KM System Provisioning",
+    "notes": [],
+    "numberOfTasks": 14,
+    "opswiseGroups": [],
+    "overrideCalendar": false,
+    "overrideInstanceWait": "No",
+    "resPriority": 10,
+    "resolveNameImmediately": false,
+    "restrictionPeriod": "None",
+    "restrictionPeriodAfterDate": null,
+    "restrictionPeriodAfterTime": null,
+    "restrictionPeriodBeforeDate": null,
+    "restrictionPeriodBeforeTime": null,
+    "restrictionPeriodDateList": [],
+    "retainSysIds": true,
+    "runCount": 0,
+    "runCriteria": [],
+    "runTime": 0,
+    "simulation": false,
+    "skippedOption": "Show Skipped",
+    "startHeld": false,
+    "startHeldReason": null,
+    "stepActions": [],
+    "stepConditions": [],
+    "summary": null,
+    "sysId": "d0e1657147dc4b52a0f6a3ceb581baf4",
+    "timeZonePref": "-- System Default --",
+    "twDelayAmount": null,
+    "twDelayDuration": "00:00:00:00",
+    "twDelayType": "None",
+    "twWaitAmount": null,
+    "twWaitDayConstraint": "None",
+    "twWaitDuration": "00:00:00:00",
+    "twWaitTime": "00:00",
+    "twWaitType": "None",
+    "twWorkflowOnly": "-- System Default --",
+    "userEstimatedDuration": null,
+    "variables": [
+        {
+            "allowEmptyOption": false,
+            "allowUnlistedOption": false,
+            "description": null,
+            "name": "exist_file",
+            "options": [],
+            "sysId": "0b56f13158974cc683d57a0064e03b12",
+            "value": "no"
+        }
+    ],
+    "version": 1,
+    "virtualResources": [],
+    "workflowEdges": [
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskName": "VM - Stop",
+                "value": "421"
+            },
+            "straightEdge": true,
+            "targetId": {
+                "taskName": "VM - Delete",
+                "value": "267"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskName": "VM - List",
+                "value": "284"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskName": "VM - Clone",
+                "value": "413"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskName": "VM - List",
+                "value": "284"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskName": "VM - Create",
+                "value": "265"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskName": "VM - Clone",
+                "value": "413"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskName": "VM - Start",
+                "value": "420"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskName": "VM - Start",
+                "value": "420"
+            },
+            "straightEdge": true,
+            "targetId": {
+                "taskAlias": "Approval for System De-Provisioning",
+                "taskName": "Approval Process(Create)",
+                "value": "431"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskAlias": "Approval for System De-Provisioning",
+                "taskName": "Approval Process(Create)",
+                "value": "431"
+            },
+            "straightEdge": true,
+            "targetId": {
+                "taskName": "VM - Stop",
+                "value": "421"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "points": [
+                {
+                    "x": "440",
+                    "y": "190"
+                }
+            ],
+            "sourceId": {
+                "taskAlias": "Approval for System Provsioning",
+                "taskName": "Approval-VM",
+                "value": "430"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskName": "VM - List",
+                "value": "284"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskAlias": "Approval for System Provsioning",
+                "taskName": "Approval-VM",
+                "value": "430"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskAlias": "EC2-CREATE-INSTANCE",
+                "taskName": "DEMO-CREATE-EC2-WITH-UNIV-AGENT",
+                "value": "443"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskAlias": "Start System Provisioning",
+                "taskName": "START-BILLING-PROCESS",
+                "value": "437"
+            },
+            "straightEdge": true,
+            "targetId": {
+                "taskAlias": "Approval for System Provsioning",
+                "taskName": "Approval-VM",
+                "value": "430"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskName": "VM - Delete",
+                "value": "267"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskName": "Workflow execution reporting",
+                "value": "439"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "points": [
+                {
+                    "x": "1390",
+                    "y": "180"
+                }
+            ],
+            "sourceId": {
+                "taskName": "VM - Create",
+                "value": "265"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskName": "Workflow execution reporting",
+                "value": "439"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "points": [
+                {
+                    "x": "1420",
+                    "y": "220"
+                }
+            ],
+            "sourceId": {
+                "taskAlias": "EC2-INSTANCE-TERMINATE",
+                "taskName": "Demo-ec2-Terminate-instance",
+                "value": "446"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskName": "Workflow execution reporting",
+                "value": "439"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskAlias": "EC2-CREATE-INSTANCE",
+                "taskName": "DEMO-CREATE-EC2-WITH-UNIV-AGENT",
+                "value": "443"
+            },
+            "straightEdge": true,
+            "targetId": {
+                "taskAlias": "EC2-INSTANCE-STATUS",
+                "taskName": "Demo-ec2-status-instance",
+                "value": "444"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskAlias": "EC2-INSTANCE-STATUS",
+                "taskName": "Demo-ec2-status-instance",
+                "value": "444"
+            },
+            "straightEdge": true,
+            "targetId": {
+                "taskAlias": "EC2-INSTANCE-STOP",
+                "taskName": "Demo-ec2-Stop-instance",
+                "value": "445"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskAlias": "EC2-INSTANCE-STOP",
+                "taskName": "Demo-ec2-Stop-instance",
+                "value": "445"
+            },
+            "straightEdge": true,
+            "targetId": {
+                "taskAlias": "EC2-INSTANCE-TERMINATE",
+                "taskName": "Demo-ec2-Terminate-instance",
+                "value": "446"
+            }
+        }
+    ],
+    "workflowVertices": [
+        {
+            "alias": null,
+            "task": {
+                "value": "VM - Create"
+            },
+            "vertexId": "265",
+            "vertexX": "595.9999999999999",
+            "vertexY": "182.00000000000003"
+        },
+        {
+            "alias": null,
+            "task": {
+                "value": "VM - Delete"
+            },
+            "vertexId": "267",
+            "vertexX": "1206.5",
+            "vertexY": "25"
+        },
+        {
+            "alias": "VM - List ",
+            "task": {
+                "value": "VM - List"
+            },
+            "vertexId": "284",
+            "vertexX": "478.9999999999999",
+            "vertexY": "103.5"
+        },
+        {
+            "alias": "VM - Clone ",
+            "task": {
+                "value": "VM - Clone"
+            },
+            "vertexId": "413",
+            "vertexX": "593.9999999999998",
+            "vertexY": "25"
+        },
+        {
+            "alias": null,
+            "task": {
+                "value": "VM - Stop"
+            },
+            "vertexId": "421",
+            "vertexX": "1090",
+            "vertexY": "25"
+        },
+        {
+            "alias": null,
+            "task": {
+                "value": "VM - Start"
+            },
+            "vertexId": "420",
+            "vertexX": "708.9999999999999",
+            "vertexY": "25"
+        },
+        {
+            "alias": "Approval for System Provsioning",
+            "task": {
+                "value": "Approval-VM"
+            },
+            "vertexId": "430",
+            "vertexX": "299.9999999999999",
+            "vertexY": "221.25"
+        },
+        {
+            "alias": "Approval for System De-Provisioning",
+            "task": {
+                "value": "Approval Process(Create)"
+            },
+            "vertexId": "431",
+            "vertexX": "899.4999999999999",
+            "vertexY": "25"
+        },
+        {
+            "alias": "Start System Provisioning",
+            "task": {
+                "value": "START-BILLING-PROCESS"
+            },
+            "vertexId": "437",
+            "vertexX": "91.49999999999997",
+            "vertexY": "220.25"
+        },
+        {
+            "alias": null,
+            "task": {
+                "value": "Workflow execution reporting"
+            },
+            "vertexId": "439",
+            "vertexX": "1378.5",
+            "vertexY": "25"
+        },
+        {
+            "alias": "EC2-CREATE-INSTANCE",
+            "task": {
+                "value": "DEMO-CREATE-EC2-WITH-UNIV-AGENT"
+            },
+            "vertexId": "443",
+            "vertexX": "610",
+            "vertexY": "350"
+        },
+        {
+            "alias": "EC2-INSTANCE-STATUS",
+            "task": {
+                "value": "Demo-ec2-status-instance"
+            },
+            "vertexId": "444",
+            "vertexX": "860",
+            "vertexY": "350"
+        },
+        {
+            "alias": "EC2-INSTANCE-STOP",
+            "task": {
+                "value": "Demo-ec2-Stop-instance"
+            },
+            "vertexId": "445",
+            "vertexX": "1100",
+            "vertexY": "350"
+        },
+        {
+            "alias": "EC2-INSTANCE-TERMINATE",
+            "task": {
+                "value": "Demo-ec2-Terminate-instance"
+            },
+            "vertexId": "446",
+            "vertexX": "1320",
+            "vertexY": "350"
+        }
+    ]
+}

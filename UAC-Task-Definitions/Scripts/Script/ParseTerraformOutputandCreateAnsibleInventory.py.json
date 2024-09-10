@@ -1,0 +1,14 @@
+{
+    "content": "#!/opt/universal/python3.6/bin/python3\nimport re\nimport sys\n\ntf_output = \"\"\"${tf_output}\"\"\"\n\nregex = r\"ec2_public_ip.*\\\"(\\d+\\.\\d+\\.\\d+\\.\\d+)\\\"\"\nmatch = re.search(regex, tf_output)\nif match:\n    public_ip = match.group(1)\n    print(\"[instance]\")\n    print(f\"{public_ip} ansible_ssh_user=ec2-user\")\nelse:\n    sys.exit(1)",
+    "description": null,
+    "exportReleaseLevel": "7.6.0.0",
+    "exportTable": "ops_script",
+    "notes": [],
+    "opswiseGroups": [],
+    "resolveVariables": true,
+    "retainSysIds": true,
+    "scriptName": "ParseTerraformOutputandCreateAnsibleInventory.py",
+    "scriptType": "Script",
+    "sysId": "f5bfc2b03b5849bb8c4801d4e01fae4a",
+    "version": 1
+}

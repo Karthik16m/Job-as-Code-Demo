@@ -1,0 +1,9 @@
+{
+    "description": null,
+    "exportReleaseLevel": "7.6.0.0",
+    "exportTable": "ops_generic_group",
+    "name": "MWC2019",
+    "retainSysIds": true,
+    "sysId": "9283b4b25c5149a0b746c3b91e3f335e",
+    "version": 1
+}

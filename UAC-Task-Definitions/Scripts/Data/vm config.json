@@ -1,0 +1,14 @@
+{
+    "content": "{\n\t\"guest_OS\": \"CENTOS_7_64\",\n\t\"name\": \"${_date('yyyy-MM-dd HH:mm:ss')}\",\n\t\"placement\": {\n\t\t\"datastore\": \"datastore-11\",\n\t\t\"folder\": \"group-v4\",\n\t\t\"host\": \"host-10\",\n\t\t\"resource_pool\": \"resgroup-9\"\n\t},\n\t\"boot_devices\": [],\n\t\"cdroms\": [\n\t],\n\t\"boot\": {\n\t\t\"delay\": 0,\n\t\t\"retry_delay\": 10,\n\t\t\"enter_setup_mode\": false,\n\t\t\"type\": \"BIOS\",\n\t\t\"retry\": false\n\t},\n\t\"cpu\": {\n\t\t\"cores_per_socket\": 1,\n\t\t\"count\": 1,\n\t\t\"hot_add_enabled\": true,\n\t\t\"hot_remove_enabled\": true\n\t},\n\t\"memory\": {\n\t\t\"hot_add_enabled\": false,\n\t\t\"size_MiB\": 2048\n\t},\n\t\"hardware_version\": \"VMX_17\"\n}",
+    "description": "JSON configuration to create Virtual machine",
+    "exportReleaseLevel": "7.6.0.0",
+    "exportTable": "ops_script",
+    "notes": [],
+    "opswiseGroups": [],
+    "resolveVariables": true,
+    "retainSysIds": true,
+    "scriptName": "vm config",
+    "scriptType": "Data",
+    "sysId": "5b98167f4faa423ea526c8294cdd2b79",
+    "version": 5
+}

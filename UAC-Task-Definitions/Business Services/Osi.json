@@ -1,0 +1,9 @@
+{
+    "description": "Omar Siala",
+    "exportReleaseLevel": "7.6.0.0",
+    "exportTable": "ops_generic_group",
+    "name": "Osi",
+    "retainSysIds": true,
+    "sysId": "baa00e8b199645e691be46a61525e936",
+    "version": 1
+}

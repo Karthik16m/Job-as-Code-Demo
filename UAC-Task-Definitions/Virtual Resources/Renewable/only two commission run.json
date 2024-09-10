@@ -1,0 +1,12 @@
+{
+    "exportReleaseLevel": "7.6.0.0",
+    "exportTable": "ops_virtual_resource",
+    "limit": 20,
+    "name": "only two commission run",
+    "opswiseGroups": [],
+    "retainSysIds": true,
+    "summary": null,
+    "sysId": "c6bfdd880c4544f7b8a8a1d191a4e25c",
+    "type": "Renewable",
+    "version": 6
+}

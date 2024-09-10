@@ -1,0 +1,14 @@
+{
+    "content": "{\n\"target\": \"${target}\",\n\"source\": \"source3\"\n}",
+    "description": null,
+    "exportReleaseLevel": "7.6.0.0",
+    "exportTable": "ops_script",
+    "notes": [],
+    "opswiseGroups": [],
+    "resolveVariables": true,
+    "retainSysIds": true,
+    "scriptName": "scr_ADF_Pipeline_param",
+    "scriptType": "Data",
+    "sysId": "66e4a8a5d8dd4c38b2dfb17e1746b01c",
+    "version": 4
+}

@@ -12,8 +12,8 @@
     "agentClusterVar": null,
     "agentVar": null,
     "autoCleanup": false,
-    "avgRunTime": 11,
-    "avgRunTimeDisplay": "11 Seconds",
+    "avgRunTime": 12,
+    "avgRunTimeDisplay": "12 Seconds",
     "booleanField1": {
         "label": "Dry-run",
         "name": "dry_run",
@@ -179,7 +179,7 @@
         "name": "taskname",
         "value": null
     },
-    "lastRun": "2024-09-09 16:16:46 +0200",
+    "lastRun": "2024-09-10 13:47:38 +0200",
     "lastRunTime": 17,
     "lastRunTimeDisplay": "17 Seconds",
     "lfDayConstraint": "None",
@@ -234,8 +234,8 @@
     "retryInterval": 60,
     "retryMaximum": 0,
     "retrySuppressFailure": false,
-    "runCount": 46,
-    "runTime": 520,
+    "runCount": 49,
+    "runTime": 572,
     "runtimeDir": null,
     "scriptField1": {
         "label": "Connection File",

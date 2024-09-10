@@ -64,9 +64,9 @@
         "name": "message",
         "value": "${msg}"
     },
-    "lastRun": "2024-09-09 07:32:43 +0200",
-    "lastRunTime": 5,
-    "lastRunTimeDisplay": "5 Seconds",
+    "lastRun": "2024-09-10 13:47:14 +0200",
+    "lastRunTime": 6,
+    "lastRunTimeDisplay": "6 Seconds",
     "lfDayConstraint": "None",
     "lfDuration": "00:00:00:00",
     "lfEnabled": false,
@@ -121,8 +121,8 @@
     "retryInterval": 60,
     "retryMaximum": 0,
     "retrySuppressFailure": false,
-    "runCount": 2157,
-    "runTime": 6501,
+    "runCount": 2159,
+    "runTime": 6511,
     "runtimeDir": null,
     "simulation": false,
     "startHeld": false,
@@ -143,7 +143,7 @@
     "textField3": {
         "label": "Slack Webhook URL",
         "name": "slack_webhook",
-        "value": "https://hooks.slack.com/services/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"
+        "value": "https://hooks.slack.com/services/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"
     },
     "textField4": {
         "label": "Invoked by",
@@ -232,7 +232,7 @@
             "value": ""
         }
     ],
-    "version": 20,
+    "version": 21,
     "virtualResources": [
         {
             "amount": 1,

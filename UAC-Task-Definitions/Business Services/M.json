@@ -1,0 +1,9 @@
+{
+    "description": null,
+    "exportReleaseLevel": "7.6.0.0",
+    "exportTable": "ops_generic_group",
+    "name": "M",
+    "retainSysIds": true,
+    "sysId": "3e255a9a0b5049749dbae4316ac23925",
+    "version": 1
+}
