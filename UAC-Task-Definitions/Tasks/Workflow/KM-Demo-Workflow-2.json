@@ -7,8 +7,8 @@
         "snmpNotifications": [],
         "systemOperations": []
     },
-    "avgRunTime": 1050,
-    "avgRunTimeDisplay": "17 Minutes 30 Seconds",
+    "avgRunTime": 806,
+    "avgRunTimeDisplay": "13 Minutes 26 Seconds",
     "calculateCp": false,
     "calendar": null,
     "cpDuration": null,
@@ -41,9 +41,9 @@
     "firstRun": "2024-01-29 13:15:17 +0100",
     "holdResources": false,
     "instanceWait": "-- None --",
-    "lastRun": "2024-01-29 13:15:17 +0100",
-    "lastRunTime": 1050,
-    "lastRunTimeDisplay": "17 Minutes 30 Seconds",
+    "lastRun": "2024-09-09 16:23:33 +0200",
+    "lastRunTime": 561,
+    "lastRunTimeDisplay": "9 Minutes 21 Seconds",
     "layoutOption": "-- None --",
     "lfDayConstraint": "None",
     "lfDuration": "00:00:00:00",
@@ -65,11 +65,11 @@
     "lsType": "Time",
     "maxRunTime": 1050,
     "maxRunTimeDisplay": "17 Minutes 30 Seconds",
-    "minRunTime": 1050,
-    "minRunTimeDisplay": "17 Minutes 30 Seconds",
+    "minRunTime": 561,
+    "minRunTimeDisplay": "9 Minutes 21 Seconds",
     "name": "KM-Demo-Workflow-2",
     "notes": [],
-    "numberOfTasks": 21,
+    "numberOfTasks": 20,
     "opswiseGroups": [
         "Karthik Mohan"
     ],
@@ -84,7 +84,7 @@
     "restrictionPeriodBeforeTime": null,
     "restrictionPeriodDateList": [],
     "retainSysIds": true,
-    "runCount": 1,
+    "runCount": 2,
     "runCriteria": [
         {
             "businessDay": false,
@@ -136,7 +136,7 @@
             "vertexId": "233"
         }
     ],
-    "runTime": 1050,
+    "runTime": 1611,
     "simulation": false,
     "skippedOption": "Show Skipped",
     "startHeld": false,
@@ -176,7 +176,7 @@
             "value": "mf_file_openshift.txt"
         }
     ],
-    "version": 34,
+    "version": 35,
     "virtualResources": [],
     "workflowEdges": [
         {
@@ -446,34 +446,6 @@
                 "value": "Success"
             },
             "sourceId": {
-                "taskName": "Upload-SO-Files-AWS-S3",
-                "value": "362"
-            },
-            "straightEdge": false,
-            "targetId": {
-                "taskName": "KM-Step Function-Task",
-                "value": "363"
-            }
-        },
-        {
-            "condition": {
-                "value": "Success"
-            },
-            "sourceId": {
-                "taskName": "KM-Step Function-Task",
-                "value": "363"
-            },
-            "straightEdge": false,
-            "targetId": {
-                "taskName": "Transfer from AWS S3 to Azure Blob",
-                "value": "366"
-            }
-        },
-        {
-            "condition": {
-                "value": "Success"
-            },
-            "sourceId": {
                 "taskAlias": "APPROVAL-MS-TEAMS-OR-SLACK-TO-START-SAP-PROCESS",
                 "taskName": "APPROVAL-SALES-ORDER-PROCESS",
                 "value": "168"
@@ -497,6 +469,20 @@
             "targetId": {
                 "taskName": "Universal-Extension-SSIS-Pack",
                 "value": "313"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success"
+            },
+            "sourceId": {
+                "taskName": "Upload-SO-Files-AWS-S3",
+                "value": "362"
+            },
+            "straightEdge": false,
+            "targetId": {
+                "taskName": "Transfer from AWS S3 to Azure Blob",
+                "value": "366"
             }
         }
     ],
@@ -662,15 +648,6 @@
             "vertexId": "362",
             "vertexX": "85",
             "vertexY": "420"
-        },
-        {
-            "alias": null,
-            "task": {
-                "value": "KM-Step Function-Task"
-            },
-            "vertexId": "363",
-            "vertexX": "-150",
-            "vertexY": "480"
         },
         {
             "alias": null,
