@@ -320,7 +320,7 @@
             }
         ]
     },
-    "agent": "EC1B-EUFRANKFURT-UAC-2 - AGNT0002",
+    "agent": "Ansible",
     "agentCluster": null,
     "agentClusterVar": null,
     "agentVar": null,
