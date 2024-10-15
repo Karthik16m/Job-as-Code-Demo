@@ -1,0 +1,118 @@
+{
+    "type": "triggerTime",
+    "action": "Do Not Trigger",
+    "adjustInterval": false,
+    "adjustmentAmount": 1,
+    "adjustmentType": "Day",
+    "calendar": "System Default",
+    "customField1": {
+        "label": null,
+        "value": null
+    },
+    "customField2": {
+        "label": null,
+        "value": null
+    },
+    "dateAdjective": "Every",
+    "dateAdjustment": "None",
+    "dateNoun": {
+        "value": "Day"
+    },
+    "dateNouns": [
+        {
+            "value": "Day"
+        }
+    ],
+    "dateQualifier": {
+        "value": "Year"
+    },
+    "dateQualifiers": [
+        {
+            "value": "Year"
+        }
+    ],
+    "dayInterval": 2,
+    "dayStyle": "Simple",
+    "description": null,
+    "disabledBy": "",
+    "disabledTime": "",
+    "enabled": true,
+    "enabledBy": "karthik",
+    "enabledEnd": "00:00",
+    "enabledStart": "00:00",
+    "enabledTime": "2024-04-12 14:16:36 +0200",
+    "enforceVariables": false,
+    "exportReleaseLevel": "7.7.0.0",
+    "exportTable": "ops_trigger_time",
+    "forecast": true,
+    "fri": false,
+    "intervalStartingDate": "2023-06-02",
+    "lockVariables": false,
+    "mon": false,
+    "name": "JaC-Demo-Trigger",
+    "nextScheduledTime": "2024-10-22 00:00:00 +0200",
+    "notes": [],
+    "nthAmount": 5,
+    "opswiseGroups": [
+        "KM-Job-as-Code"
+    ],
+    "rdExcludeBackup": false,
+    "restrictedTimes": false,
+    "restriction": false,
+    "restrictionAdjective": "Every",
+    "restrictionComplex": false,
+    "restrictionMode": "Or",
+    "restrictionNoun": {
+        "value": "Day"
+    },
+    "restrictionNouns": [
+        {
+            "value": "Day"
+        }
+    ],
+    "restrictionNthAmount": 5,
+    "restrictionQualifier": {
+        "value": "Year"
+    },
+    "restrictionQualifiers": [
+        {
+            "value": "Year"
+        }
+    ],
+    "restrictionSimple": false,
+    "retainSysIds": true,
+    "retentionDuration": 1,
+    "retentionDurationPurge": false,
+    "retentionDurationUnit": "Days",
+    "sat": false,
+    "simpleDateType": "Specific Days",
+    "simulateTasks": false,
+    "simulationOption": "-- System Default --",
+    "situation": "Holiday",
+    "skipActive": false,
+    "skipAfterDate": null,
+    "skipAfterTime": null,
+    "skipBeforeDate": null,
+    "skipBeforeTime": null,
+    "skipCondition": "None",
+    "skipCount": 0,
+    "skipDateList": [],
+    "skipRestriction": "None",
+    "startTimeEnable": false,
+    "startingAt": "*:00",
+    "sun": false,
+    "sysId": "0d33b95afa5f416183507d21a93a85ea",
+    "tasks": [
+        "JaC-validate-report"
+    ],
+    "thu": false,
+    "time": "00:00",
+    "timeInterval": null,
+    "timeIntervalUnits": "Hours",
+    "timeStyle": "Absolute",
+    "timeZone": null,
+    "tue": true,
+    "variables": [],
+    "version": 15,
+    "wed": false
+}
