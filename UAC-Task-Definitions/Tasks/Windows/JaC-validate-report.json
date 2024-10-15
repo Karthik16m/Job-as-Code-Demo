@@ -23,7 +23,7 @@
         "snmpNotifications": [],
         "systemOperations": []
     },
-    "agent": "Ansible",
+    "agent": "Hof(Windows & DB connect)",
     "agentCluster": null,
     "agentClusterVar": null,
     "agentVar": null,
