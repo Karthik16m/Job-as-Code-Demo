@@ -1,9 +1,0 @@
-{
-    "description": null,
-    "exportReleaseLevel": "7.6.0.0",
-    "exportTable": "ops_generic_group",
-    "name": "Location A SAP Team",
-    "retainSysIds": true,
-    "sysId": "40abd40edbcc43d5b3c5fd24bdf39ba4",
-    "version": 1
-}

@@ -1,9 +1,0 @@
-{
-    "description": null,
-    "exportReleaseLevel": "7.6.0.0",
-    "exportTable": "ops_generic_group",
-    "name": "IEEE_DEMO",
-    "retainSysIds": true,
-    "sysId": "52ba1a07db1141e0967850df100fc845",
-    "version": 1
-}

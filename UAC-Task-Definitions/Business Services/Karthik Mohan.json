@@ -1,9 +1,0 @@
-{
-    "description": "Business Service to group Tasks created by KM",
-    "exportReleaseLevel": "7.6.0.0",
-    "exportTable": "ops_generic_group",
-    "name": "Karthik Mohan",
-    "retainSysIds": true,
-    "sysId": "d5aa4df9c26e416ab24ac7df36f3b559",
-    "version": 1
-}

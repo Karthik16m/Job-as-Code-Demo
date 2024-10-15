@@ -1,9 +1,0 @@
-{
-    "description": "DEMO-SAP-WORKFLOW business service",
-    "exportReleaseLevel": "7.6.0.0",
-    "exportTable": "ops_generic_group",
-    "name": "DEMO-SAP-WORKFLOW",
-    "retainSysIds": true,
-    "sysId": "235e0d41c06b4c4c990f00921518a590",
-    "version": 1
-}

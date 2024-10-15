@@ -1,9 +1,0 @@
-{
-    "description": "Jobs that belongs to bigdata group",
-    "exportReleaseLevel": "7.6.0.0",
-    "exportTable": "ops_generic_group",
-    "name": "Bigdata Tasks",
-    "retainSysIds": true,
-    "sysId": "190977a982284664aeaa5493ffcf0e45",
-    "version": 1
-}

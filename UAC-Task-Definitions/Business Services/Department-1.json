@@ -1,9 +1,0 @@
-{
-    "description": null,
-    "exportReleaseLevel": "7.6.0.0",
-    "exportTable": "ops_generic_group",
-    "name": "Department-1",
-    "retainSysIds": true,
-    "sysId": "acd2d5f99d6c4147840336ff5c53e5f0",
-    "version": 1
-}

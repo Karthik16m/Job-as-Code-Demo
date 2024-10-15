@@ -1,9 +1,0 @@
-{
-    "description": null,
-    "exportReleaseLevel": "7.6.0.0",
-    "exportTable": "ops_generic_group",
-    "name": "Mader Group",
-    "retainSysIds": true,
-    "sysId": "c32f1d912dfb4c3880d890f021b1846b",
-    "version": 33
-}

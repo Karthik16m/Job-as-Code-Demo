@@ -1,9 +1,0 @@
-{
-    "description": null,
-    "exportReleaseLevel": "7.6.0.0",
-    "exportTable": "ops_generic_group",
-    "name": "Operations users",
-    "retainSysIds": true,
-    "sysId": "e73b2b9faef3439ea44edaa9dd305cd1",
-    "version": 1
-}
