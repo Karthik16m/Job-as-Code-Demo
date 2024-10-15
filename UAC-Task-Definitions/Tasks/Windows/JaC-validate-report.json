@@ -23,7 +23,7 @@
         "snmpNotifications": [],
         "systemOperations": []
     },
-    "agent": "EC2AMAZ-L71D4UL - AGNT0003",
+    "agent": "Ansible",
     "agentCluster": null,
     "agentClusterVar": null,
     "agentVar": null,
