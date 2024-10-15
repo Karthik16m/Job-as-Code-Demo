@@ -1,0 +1,16 @@
+{
+    "content": "#!/opt/universal/python/bin/python\nimport sys\n\nimport pandas as pd\n\ndef read_file(filename):\n    df = pd.read_excel(filename)\n    if df.empty:\n        print('Report file is empty')\n    else:\n        print('Report file is not empty')\n        for col in df.columns:\n            miss = df[col].isnull().sum()\n            if miss > 0:\n                print(f\"{col} has {miss} missing value(s)\")\n                sys.exit(1)\n            else:\n                print(f\"{col} has NO missing value!\")\n            #sys.exit(0)\n    return\n\n\n# filename ='C:\\Karthik Data\\Imaiberica\\sales_2021'\nread_file(\"C:\\Karthik\\Imaiberica\\sales data\\sales_2022.xlsx\")",
+    "description": "added from demo for ALDi",
+    "exportReleaseLevel": "7.7.0.0",
+    "exportTable": "ops_script",
+    "notes": [],
+    "opswiseGroups": [
+        "KM-Job-as-Code"
+    ],
+    "resolveVariables": true,
+    "retainSysIds": true,
+    "scriptName": "JaC-validate_sales_data.uapy",
+    "scriptType": "Script",
+    "sysId": "074b98e1aeaf441eb7085489017e1e25",
+    "version": 11
+}
