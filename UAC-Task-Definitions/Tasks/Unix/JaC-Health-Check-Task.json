@@ -7,7 +7,7 @@
         "snmpNotifications": [],
         "systemOperations": []
     },
-    "agent": "Kubernetes",
+    "agent": "Ansible",
     "agentCluster": null,
     "agentClusterVar": null,
     "agentVar": null,
@@ -105,7 +105,7 @@
     "simulation": false,
     "startHeld": false,
     "startHeldReason": null,
-    "summary": null,
+    "summary": "Change via JaC",
     "sysId": "5278344c21684d3d82da63ae4ddd88e0",
     "timeZonePref": "-- System Default --",
     "twDelayAmount": null,
