@@ -7,7 +7,7 @@
         "snmpNotifications": [],
         "systemOperations": []
     },
-    "agent": "ULM - SAP",
+    "agent": "Kubernetes",
     "agentCluster": null,
     "agentClusterVar": null,
     "agentVar": null,
@@ -119,7 +119,7 @@
     "twWorkflowOnly": "-- System Default --",
     "userEstimatedDuration": null,
     "variables": [],
-    "version": 18,
+    "version": 19,
     "virtualResources": [],
     "waitForOutput": false
 }
