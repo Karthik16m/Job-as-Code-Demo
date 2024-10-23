@@ -110,7 +110,7 @@
     "runCount": 1,
     "runTime": 7,
     "simulation": false,
-    "sqlCommand": "select * from sys.table",
+    "sqlCommand": "select * from sys.tables",
     "startHeld": false,
     "startHeldReason": null,
     "summary": null,
