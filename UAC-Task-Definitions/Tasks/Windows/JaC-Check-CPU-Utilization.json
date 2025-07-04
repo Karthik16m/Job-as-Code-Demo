@@ -29,7 +29,7 @@
     "agentVar": null,
     "broadcastCluster": null,
     "broadcastClusterVar": null,
-    "command": "powershell -F \"C:\\Users\\Admin\\ravi\\cpu_util_Citco.ps1",
+    "command": "powershell -F \"C:\\Users\\Admin\\ravi\\cpu_util_karthik_mohan_askme.ps1",
     "commandOrScript": "Command",
     "cpDuration": null,
     "cpDurationUnit": "Minutes",
