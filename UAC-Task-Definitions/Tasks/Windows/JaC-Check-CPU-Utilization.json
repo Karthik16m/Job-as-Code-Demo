@@ -13,7 +13,7 @@
                 "notifyOnLateStart": false,
                 "notifyOnProjectedLate": false,
                 "status": "Success",
-                "sysId": "e02860a48edf436d9c42d4e8759839c8",
+                "sysId": "445f9f9c37b24615a8137b2e11e4f4d4",
                 "variableDescription": "Update the Variable when the task goes to success - Updated For CITCO-12-April",
                 "variableName": "output_holder",
                 "variableScope": "Global",
@@ -29,7 +29,7 @@
     "agentVar": null,
     "broadcastCluster": null,
     "broadcastClusterVar": null,
-    "command": "powershell -F \"C:\\Users\\Admin\\ravi\\cpu_util_Citco.ps1",
+    "command": "powershell -F \"C:\\Users\\Admin\\ravi\\cpu_util_karthik_mohan_askme.ps1",
     "commandOrScript": "Command",
     "cpDuration": null,
     "cpDurationUnit": "Minutes",
@@ -139,7 +139,7 @@
     "twWorkflowOnly": "-- System Default --",
     "userEstimatedDuration": null,
     "variables": [],
-    "version": 22,
+    "version": 23,
     "virtualResources": [],
     "waitForOutput": true
 }
