@@ -5,7 +5,7 @@
         "emailNotifications": [],
         "setVariableActions": [
             {
-                "description": "Variable to capture data validation output",
+                "description": "Variable to capture data validation output -- edited",
                 "exitCodes": null,
                 "notificationOption": "Operation Failure",
                 "notifyOnEarlyFinish": false,
