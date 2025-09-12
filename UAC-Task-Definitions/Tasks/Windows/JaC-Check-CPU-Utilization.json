@@ -7,7 +7,7 @@
             {
                 "description": "Update the Variable when the task goes to success - Updated For CITCO-12-April",
                 "exitCodes": null,
-                "notificationOption": "Operation Failure",
+                "notificationOption": "Operation Success",
                 "notifyOnEarlyFinish": false,
                 "notifyOnLateFinish": false,
                 "notifyOnLateStart": false,
