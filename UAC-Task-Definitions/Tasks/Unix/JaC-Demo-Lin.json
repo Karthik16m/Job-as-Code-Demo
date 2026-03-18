@@ -121,7 +121,7 @@
     "twWorkflowOnly": "-- System Default --",
     "userEstimatedDuration": null,
     "variables": [],
-    "version": 1,
+    "version": 2,
     "virtualResources": [],
     "waitForOutput": false
 }
