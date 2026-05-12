@@ -1,7 +1,7 @@
 {
     "changeHistory": [],
     "description": "Tasks related to Job-as-code Demo",
-    "exportReleaseLevel": "7.9.0.0",
+    "exportReleaseLevel": "8.0.0.0",
     "exportTable": "ops_generic_group",
     "name": "KM-Job-as-Code",
     "retainSysIds": true,

@@ -7,7 +7,7 @@
         "snmpNotifications": [],
         "systemOperations": []
     },
-    "agent": "ULM - SAP",
+    "agent": "Ansible",
     "agentCluster": null,
     "agentClusterVar": null,
     "agentVar": null,
@@ -18,8 +18,14 @@
     "commandOrScript": "Script",
     "cpDuration": null,
     "cpDurationUnit": "Minutes",
+    "created": "2025-12-19 15:33:53 +0100",
+    "createdBy": "karthik",
     "credentials": null,
     "credentialsVar": null,
+    "customChoiceField1": {
+        "label": null,
+        "value": null
+    },
     "customField1": {
         "label": "Agency Code",
         "value": null
@@ -47,7 +53,7 @@
     "exitCodeProcessing": "Success Exitcode Range",
     "exitCodeText": null,
     "exitCodes": "0",
-    "exportReleaseLevel": "7.9.0.0",
+    "exportReleaseLevel": "8.0.0.0",
     "exportTable": "ops_task_unix",
     "firstRun": "",
     "holdResources": false,
@@ -119,9 +125,11 @@
     "twWaitTime": "00:00",
     "twWaitType": "None",
     "twWorkflowOnly": "-- System Default --",
+    "updated": "2026-04-28 14:16:32 +0200",
+    "updatedBy": "karthik",
     "userEstimatedDuration": null,
     "variables": [],
-    "version": 2,
+    "version": 6,
     "virtualResources": [],
     "waitForOutput": false
 }
