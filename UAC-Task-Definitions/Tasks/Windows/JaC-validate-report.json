@@ -23,10 +23,10 @@
         "snmpNotifications": [],
         "systemOperations": []
     },
-    "agent": "MEHUL2",
+    "agent": null,
     "agentCluster": null,
     "agentClusterVar": null,
-    "agentVar": null,
+    "agentVar": "${Mehul}",
     "broadcastCluster": null,
     "broadcastClusterVar": null,
     "changeHistory": [],
@@ -35,8 +35,14 @@
     "cpDuration": null,
     "cpDurationUnit": "Minutes",
     "createConsole": false,
+    "created": "2023-05-23 10:16:12 +0200",
+    "createdBy": "ravi",
     "credentials": null,
     "credentialsVar": null,
+    "customChoiceField1": {
+        "label": null,
+        "value": null
+    },
     "customField1": {
         "label": "Agency Code",
         "value": null
@@ -66,7 +72,7 @@
     "exitCodeProcessing": "Success Exitcode Range",
     "exitCodeText": null,
     "exitCodes": "0",
-    "exportReleaseLevel": "7.9.0.0",
+    "exportReleaseLevel": "8.0.0.0",
     "exportTable": "ops_task_windows",
     "firstRun": "",
     "holdResources": false,
@@ -137,6 +143,8 @@
     "twWaitTime": "00:00",
     "twWaitType": "None",
     "twWorkflowOnly": "-- System Default --",
+    "updated": "2026-04-15 09:24:19 +0200",
+    "updatedBy": "ravi",
     "userEstimatedDuration": null,
     "variables": [
         {
@@ -150,7 +158,7 @@
             "value": "D:\\Karthik\\Imaiberica\\sales data\\sales_2022.xlsx"
         }
     ],
-    "version": 27,
+    "version": 28,
     "virtualResources": [],
     "waitForOutput": true
 }

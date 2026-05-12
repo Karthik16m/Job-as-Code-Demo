@@ -12,7 +12,13 @@
     "changeHistory": [],
     "cpDuration": null,
     "cpDurationUnit": "Minutes",
+    "created": "2025-07-04 12:48:06 +0200",
+    "createdBy": "karthik",
     "criticalEndpoints": [],
+    "customChoiceField1": {
+        "label": null,
+        "value": null
+    },
     "customField1": {
         "label": "Agency Code",
         "value": null
@@ -35,7 +41,7 @@
     "exclusiveTasks": [],
     "exclusiveWithSelf": false,
     "executionRestriction": "None",
-    "exportReleaseLevel": "7.9.0.0",
+    "exportReleaseLevel": "8.0.0.0",
     "exportTable": "ops_task_workflow",
     "firstRun": "",
     "holdResources": false,
@@ -100,6 +106,8 @@
     "twWaitTime": "00:00",
     "twWaitType": "None",
     "twWorkflowOnly": "-- System Default --",
+    "updated": "2025-12-19 13:05:41 +0100",
+    "updatedBy": "karthik",
     "userEstimatedDuration": null,
     "variables": [],
     "version": 8,

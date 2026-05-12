@@ -35,8 +35,14 @@
     "cpDuration": null,
     "cpDurationUnit": "Minutes",
     "createConsole": false,
+    "created": "2023-05-23 10:16:11 +0200",
+    "createdBy": "ravi",
     "credentials": null,
     "credentialsVar": null,
+    "customChoiceField1": {
+        "label": null,
+        "value": null
+    },
     "customField1": {
         "label": "Agency Code",
         "value": null
@@ -66,7 +72,7 @@
     "exitCodeProcessing": "Success Output Contains",
     "exitCodeText": "CPU-LOAD is Normal",
     "exitCodes": "0",
-    "exportReleaseLevel": "7.9.0.0",
+    "exportReleaseLevel": "8.0.0.0",
     "exportTable": "ops_task_windows",
     "firstRun": "",
     "holdResources": false,
@@ -138,6 +144,8 @@
     "twWaitTime": "00:00",
     "twWaitType": "None",
     "twWorkflowOnly": "-- System Default --",
+    "updated": "2025-12-19 15:30:10 +0100",
+    "updatedBy": "karthik",
     "userEstimatedDuration": null,
     "variables": [],
     "version": 30,
