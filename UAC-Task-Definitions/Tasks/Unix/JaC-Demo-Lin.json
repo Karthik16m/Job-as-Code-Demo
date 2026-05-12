@@ -7,7 +7,7 @@
         "snmpNotifications": [],
         "systemOperations": []
     },
-    "agent": "Ansible",
+    "agent": "Kubernetes",
     "agentCluster": null,
     "agentClusterVar": null,
     "agentVar": null,
