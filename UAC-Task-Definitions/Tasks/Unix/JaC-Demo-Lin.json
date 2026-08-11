@@ -8,12 +8,6 @@
         "systemOperations": []
     },
     "agent": "Kubernetes",
-    "agentCluster": null,
-    "agentClusterVar": null,
-    "agentVar": null,
-    "broadcastCluster": null,
-    "broadcastClusterVar": null,
-    "command": null,
     "commandOrScript": "Script",
     "cpDuration": null,
     "cpDurationUnit": "Minutes",
@@ -78,7 +72,8 @@
     "name": "JaC-Demo-Lin",
     "notes": [],
     "opswiseGroups": [
-        "KM-Job-as-Code"
+        "KM-Job-as-Code",
+        "Karthik Mohan"
     ],
     "outputFailureOnly": false,
     "outputReturnFile": null,
