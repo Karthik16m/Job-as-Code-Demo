@@ -9,7 +9,6 @@
     },
     "calculateCp": false,
     "calendar": null,
-    "changeHistory": [],
     "cpDuration": null,
     "cpDurationUnit": "Minutes",
     "created": "2025-07-04 12:48:06 +0200",
@@ -106,11 +105,11 @@
     "twWaitTime": "00:00",
     "twWaitType": "None",
     "twWorkflowOnly": "-- System Default --",
-    "updated": "2025-12-19 13:05:41 +0100",
+    "updated": "2026-05-12 12:26:45 +0200",
     "updatedBy": "karthik",
     "userEstimatedDuration": null,
     "variables": [],
-    "version": 8,
+    "version": 10,
     "virtualResources": [],
     "workflowEdges": [
         {

@@ -1,5 +1,4 @@
 {
-    "changeHistory": [],
     "description": "Tasks related to Job-as-code Demo",
     "exportReleaseLevel": "8.0.0.0",
     "exportTable": "ops_generic_group",

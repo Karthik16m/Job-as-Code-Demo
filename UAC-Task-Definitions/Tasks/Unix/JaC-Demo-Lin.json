@@ -13,7 +13,6 @@
     "agentVar": null,
     "broadcastCluster": null,
     "broadcastClusterVar": null,
-    "changeHistory": [],
     "command": null,
     "commandOrScript": "Script",
     "cpDuration": null,
@@ -125,11 +124,11 @@
     "twWaitTime": "00:00",
     "twWaitType": "None",
     "twWorkflowOnly": "-- System Default --",
-    "updated": "2026-04-28 14:16:32 +0200",
+    "updated": "2026-05-12 12:26:44 +0200",
     "updatedBy": "karthik",
     "userEstimatedDuration": null,
     "variables": [],
-    "version": 6,
+    "version": 8,
     "virtualResources": [],
     "waitForOutput": false
 }
