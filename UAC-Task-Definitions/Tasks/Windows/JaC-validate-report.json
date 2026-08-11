@@ -13,7 +13,7 @@
                 "notifyOnLateStart": false,
                 "notifyOnProjectedLate": false,
                 "status": "Success",
-                "sysId": "234af9fd56cc47e6815f827fcdb9eb98",
+                "sysId": "c8258f95443743359f6324b6c74a80b7",
                 "variableDescription": "Variable to capture data validation output",
                 "variableName": "reportvalidation",
                 "variableScope": "Global",
@@ -29,7 +29,6 @@
     "agentVar": "${Mehul}",
     "broadcastCluster": null,
     "broadcastClusterVar": null,
-    "changeHistory": [],
     "command": null,
     "commandOrScript": "Script",
     "cpDuration": null,
@@ -143,8 +142,8 @@
     "twWaitTime": "00:00",
     "twWaitType": "None",
     "twWorkflowOnly": "-- System Default --",
-    "updated": "2026-04-15 09:24:19 +0200",
-    "updatedBy": "ravi",
+    "updated": "2026-07-21 13:52:54 +0200",
+    "updatedBy": "karthik",
     "userEstimatedDuration": null,
     "variables": [
         {
@@ -154,11 +153,11 @@
             "name": "reportfile",
             "options": [],
             "required": false,
-            "sysId": "33a69049865e4a7c9666c58d5af6120c",
+            "sysId": "70c6bc3731db42ed850e48bc55d93141",
             "value": "D:\\Karthik\\Imaiberica\\sales data\\test.xlsx"
         }
     ],
-    "version": 28,
+    "version": 32,
     "virtualResources": [],
     "waitForOutput": true
 }
